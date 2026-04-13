@@ -4,40 +4,40 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
+ 
 # Fichiers de log et cache
 *.log
 *.cache
 cache/
 logs/
-
+ 
 # Fichiers de configuration sensibles
 .env
 .env.local
 .env.production
 config.local.php
 database.php
-
+ 
 # Dossiers temporaires
 tmp/
 temp/
 uploads/
 backup/
-
+ 
 # Fichiers de dépendances (optionnel)
 node_modules/
 vendor/
-
+ 
 # Fichiers de compilation
 *.min.js.map
 *.min.css.map
-
+ 
 # IDE/Editor
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
-
+ 
 # XAMPP spécifique
 xampp/
 phpmyadmin/

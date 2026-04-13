@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.client-space-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.client-space-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2F83C2;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+}
+
+.client-space-header h1 {
+    font-size: 24px;
+}
+
+.client-space-logout-btn {
+    padding: 10px 20px;
+    background-color: #1F5B8A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Empêche le bouton de se diviser sur plusieurs lignes */
+}
+
+.client-space-logout-btn:hover {
+    background-color: #144066;
+}
+
+/* Section des informations personnelles */
+.client-space-personal-info, .client-space-purchase-history, .client-space-account-settings{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.client-space-info-box {
+    background-color: #EAF4FD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-space-info-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333333;
+    white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+}
+
+/* Boutons de modification et autres */
+.client-space-update-info-btn, .client-space-more-history-btn, .client-space-change-password-btn {
+    padding: 10px 20px;
+    background-color: #2F83C2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.client-space-update-info-btn:hover, .client-space-more-history-btn:hover, .client-space-change-password-btn:hover {
+    background-color: #1F5B8A;
+}
+
+.client-space-logout-btn:hover {
+    background-color: #144066;
+}
+
+/* Formulaire de mise à jour des informations */
+#update-form input[type="text"],
+#update-form input[type="email"],
+#update-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#update-form input[type="submit"] {
+    background-color: #1F5B8A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#update-form input[type="submit"]:hover {
+    background-color: #2F83C2;
+}
+
+/* Formulaire de changement de mot de passe */
+#change-password-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#change-password-form input[type="submit"] {
+    background-color: #1F5B8A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#change-password-form input[type="submit"]:hover {
+    background-color: #2F83C2;
+}
+
+/* Section historique des achats */
+.client-space-purchase-history .client-space-history-item {
+    background-color: #E5F2FA;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Design responsive */
+@media only screen and (max-width: 768px) {
+    .client-space-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .client-space-header h1 {
+        font-size: 20px;
+    }
+
+    .client-space-logout-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .client-space-info-box p {
+        font-size: 16px;
+    }
+
+    .client-space-update-info-btn, .client-space-more-history-btn, .client-space-change-password-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .client-space-container {
+        width: 95%;
+    }
+
+    .client-space-header h1 {
+        font-size: 18px;
+    }
+
+    .client-space-logout-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .client-space-info-box p {
+        font-size: 14px;
+    }
+}

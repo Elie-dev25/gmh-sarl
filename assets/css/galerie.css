@@ -1,0 +1,127 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Conteneur de la galerie */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grille de maçonnerie */
+.gallery {
+    column-count: 4; /* Nombre de colonnes pour la grille */
+    column-gap: 15px; /* Espace entre les colonnes */
+}
+
+.gallery-item {
+    break-inside: avoid; /* Empêche les images d'être coupées entre les colonnes */
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Effet de survol sur l'image */
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Fenêtre modale (plein écran) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal-content {
+    margin: auto;
+    max-width: 50%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Bouton d'achat */
+.buy-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #2F83C2;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.gallery-item:hover .buy-button {
+    opacity: 1;
+}
+
+.buy-button:hover {
+    color: white;
+    background-color: #1F5B8A;
+    text-decoration: none;
+}
+
+/* Responsive: Désactiver la grille sur petits écrans */
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 3; /* 2 colonnes sur petits écrans */
+    }
+
+    .modal {
+        display: none !important; /* Cache la modale sur petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        column-count: 2; /* 1 colonne sur écrans très petits */
+    }
+}

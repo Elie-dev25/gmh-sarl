@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirections des anciennes URLs vers les nouvelles (dans /pages/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(about|contact|services|produits|login|register|panier|account|cathalogue|cathalogue2|cathalogue3|galerie)\.php$ pages/$1.php [R=301,L]
+
+# Redirection des anciens fichiers HTML vers PHP
+RewriteRule ^login\.html$ pages/login.php [R=301,L]
+RewriteRule ^register\.html$ pages/register.php [R=301,L]
+
+# Redirection des anciens fichiers API
+RewriteRule ^(process_login|process_register|process_purchase|send|change_password|update_user_info|check_login|logout)\.php$ api/$1.php [R=301,L]
+
+# Redirection des anciens fichiers de config
+RewriteRule ^(db|db_connection)\.php$ config/$1.php [R=301,L]

@@ -1,0 +1,18 @@
+/* Forcer les images à être rondes */
+.member-media img {
+    border-radius: 50% !important; /* Assure la forme circulaire */
+    width: 250px !important; /* Fixe la largeur */
+    height: 250px !important; /* Fixe la hauteur */
+    object-fit: cover !important; /* Remplit correctement l'espace circulaire */
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Ajouter une bordure blanche pour un effet esthétique */
+.member-media {
+    border: 5px solid #fff !important; /* Bordure blanche */
+    border-radius: 50% !important; /* Bordure circulaire */
+    overflow: hidden !important; /* Empêche les débordements */
+    display: inline-block !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Légère ombre */
+}

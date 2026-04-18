@@ -4,6 +4,8 @@ if (isset($_SESSION['email'])) {
     header('Location: account.php');
     exit;
 }
+include(__DIR__ . '/../config/security.php');
+$csrf_token = generateCSRFToken();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -59,6 +61,9 @@ if (isset($_SESSION['email'])) {
             <?php endif; ?>
             
             <form class="auth-form" action="../api/process_login.php" method="POST">
+                <!-- CSRF Token -->
+                <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
+                
                 <div class="form-group">
                     <label class="form-label" for="email">Adresse email</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>

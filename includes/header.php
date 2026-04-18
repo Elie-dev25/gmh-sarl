@@ -3,6 +3,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Include security functions globally
+include_once(__DIR__ . '/../config/security.php');
+
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $is_home = ($current_page === 'index');
 $header_class = $is_home ? 'gmh-header transparent' : 'gmh-header solid';

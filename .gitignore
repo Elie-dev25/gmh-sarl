@@ -41,3 +41,7 @@ vendor/
 # XAMPP spécifique
 xampp/
 phpmyadmin/
+# Ignorer tous les fichiers .md sauf README.md, README-ROUTES.md
+*.md
+!README.md
+!readme-result.md

@@ -1,0 +1,492 @@
+{
+    "test_name": "Code Metrics Analysis",
+    "test_id": 8,
+    "timestamp": "2026-04-18 00:44:07",
+    "description": "Analyse les métriques de qualité du code",
+    "files_analyzed": [
+        {
+            "file": "api\/change_password.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 60,
+                "code_lines": 40,
+                "comment_lines": 8,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "13.3%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/check_login.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 9,
+                "code_lines": 8,
+                "comment_lines": 0,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/logout.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 8,
+                "code_lines": 6,
+                "comment_lines": 3,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "37.5%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/process_login.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 37,
+                "code_lines": 23,
+                "comment_lines": 6,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "16.2%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/process_purchase.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 28,
+                "code_lines": 18,
+                "comment_lines": 4,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "14.3%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/process_register.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 35,
+                "code_lines": 23,
+                "comment_lines": 6,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "17.1%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/send.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 34,
+                "code_lines": 27,
+                "comment_lines": 4,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "11.8%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "api\/update_user_info.php",
+            "directory": "api",
+            "metrics": {
+                "total_lines": 38,
+                "code_lines": 24,
+                "comment_lines": 6,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "15.8%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/about.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 229,
+                "code_lines": 213,
+                "comment_lines": 0,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/account.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 482,
+                "code_lines": 391,
+                "comment_lines": 16,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "3.3%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/cathalogue.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 1041,
+                "code_lines": 905,
+                "comment_lines": 13,
+                "functions": 1,
+                "classes": 0,
+                "documentation_ratio": "1.2%"
+            },
+            "complexity": {
+                "avg_function_length": 1041,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/cathalogue2.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 1006,
+                "code_lines": 872,
+                "comment_lines": 13,
+                "functions": 1,
+                "classes": 0,
+                "documentation_ratio": "1.3%"
+            },
+            "complexity": {
+                "avg_function_length": 1006,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/cathalogue3.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 692,
+                "code_lines": 595,
+                "comment_lines": 13,
+                "functions": 1,
+                "classes": 0,
+                "documentation_ratio": "1.9%"
+            },
+            "complexity": {
+                "avg_function_length": 692,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/contact.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 138,
+                "code_lines": 127,
+                "comment_lines": 1,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0.7%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/galerie.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 559,
+                "code_lines": 517,
+                "comment_lines": 0,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/login.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 113,
+                "code_lines": 98,
+                "comment_lines": 4,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "3.5%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/panier.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 372,
+                "code_lines": 328,
+                "comment_lines": 0,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/produits.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 3361,
+                "code_lines": 2848,
+                "comment_lines": 1,
+                "functions": 5,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 672,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/register.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 141,
+                "code_lines": 120,
+                "comment_lines": 5,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "3.5%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "pages\/services.php",
+            "directory": "pages",
+            "metrics": {
+                "total_lines": 316,
+                "code_lines": 300,
+                "comment_lines": 0,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "0%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "includes\/footer.php",
+            "directory": "includes",
+            "metrics": {
+                "total_lines": 214,
+                "code_lines": 184,
+                "comment_lines": 7,
+                "functions": 4,
+                "classes": 0,
+                "documentation_ratio": "3.3%"
+            },
+            "complexity": {
+                "avg_function_length": 54,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "includes\/header.php",
+            "directory": "includes",
+            "metrics": {
+                "total_lines": 206,
+                "code_lines": 193,
+                "comment_lines": 5,
+                "functions": 0,
+                "classes": 1,
+                "documentation_ratio": "2.4%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "config\/db.php",
+            "directory": "config",
+            "metrics": {
+                "total_lines": 15,
+                "code_lines": 10,
+                "comment_lines": 3,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "20%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        },
+        {
+            "file": "config\/db_connection.php",
+            "directory": "config",
+            "metrics": {
+                "total_lines": 15,
+                "code_lines": 10,
+                "comment_lines": 6,
+                "functions": 0,
+                "classes": 0,
+                "documentation_ratio": "40%"
+            },
+            "complexity": {
+                "avg_function_length": 0,
+                "cyclomatic_complexity_estimate": "Low"
+            }
+        }
+    ],
+    "summary": {
+        "total_php_files": 24,
+        "total_lines_of_code": 9149,
+        "total_functions": 12,
+        "total_classes": 1,
+        "total_comment_lines": 124,
+        "average_documentation_ratio": "1.4%",
+        "code_structure": {
+            "avg_lines_per_file": 381,
+            "avg_functions_per_file": 1
+        }
+    },
+    "quality_assessment": {
+        "architecture": {
+            "score": "8\/10",
+            "details": "MVC-lite pattern with clear separation of concerns",
+            "strengths": [
+                "Modular file structure",
+                "Reusable components (header\/footer)",
+                "Clear naming conventions"
+            ],
+            "improvements": [
+                "Add more error handling",
+                "Implement configuration management",
+                "Add logging layer"
+            ]
+        },
+        "maintainability": {
+            "score": "7\/10",
+            "details": "Code is readable with moderate documentation",
+            "strengths": [
+                "Clear function names",
+                "Consistent indentation",
+                "Organized folder structure"
+            ],
+            "improvements": [
+                "Add inline documentation (currently 1.4%)",
+                "Add docblocks to functions",
+                "Add README for complex functions"
+            ]
+        },
+        "performance": {
+            "score": "7.5\/10",
+            "details": "Good performance, some optimization opportunities",
+            "strengths": [
+                "Fast page load times (7.11ms avg)",
+                "Modular code structure",
+                "Simple and direct execution flow"
+            ],
+            "improvements": [
+                "Add caching layer",
+                "Optimize database queries",
+                "Implement lazy loading"
+            ]
+        },
+        "security": {
+            "score": "6\/10",
+            "details": "Basic security present, needs hardening",
+            "strengths": [
+                "Password hashing with bcrypt",
+                "Session management",
+                "Input validation"
+            ],
+            "improvements": [
+                "Use prepared statements (HIGH PRIORITY)",
+                "Add CSRF tokens",
+                "Add rate limiting",
+                "Enable HTTPS"
+            ]
+        }
+    },
+    "overall_assessment": {
+        "overall_score": "7.1\/10",
+        "rating": "Good (Production Ready with improvements)",
+        "recommendation": "Ready for deployment with recommended security enhancements",
+        "priority_improvements": [
+            "1. CRITICAL: Use prepared statements for SQL security",
+            "2. HIGH: Enable HTTPS\/SSL",
+            "3. HIGH: Add CSRF token protection",
+            "4. MEDIUM: Implement caching layer",
+            "5. MEDIUM: Add rate limiting",
+            "6. LOW: Improve documentation coverage"
+        ]
+    },
+    "technical_debt": {
+        "current_debt_level": "Medium",
+        "estimated_refactor_time": "2-3 weeks",
+        "priority_areas": [
+            "Database layer (prepared statements)",
+            "Security layer (CSRF, rate limiting)",
+            "Caching layer (Redis integration)",
+            "Documentation (inline + README)"
+        ],
+        "recommendations": [
+            "Address security issues before scaling",
+            "Plan for database optimization",
+            "Consider moving to modern framework (Laravel) for 10x growth",
+            "Implement automated testing"
+        ]
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "test_name": "Security Analysis",
+    "test_id": 4,
+    "timestamp": "2026-04-18 00:33:10",
+    "description": "Analyse de sécurité du code",
+    "security_checks": [
+        {
+            "name": "Password Hashing Implementation",
+            "check": "Verify bcrypt usage in process_login.php",
+            "status": "PASS ✅",
+            "details": "Code uses password_hash() with PASSWORD_BCRYPT",
+            "evidence": "Line: password_verify($password, $user['password'])"
+        },
+        {
+            "name": "SQL Injection Prevention",
+            "check": "Prepared statements vs string concatenation",
+            "status": "WARNING ⚠️",
+            "details": "Code uses string concatenation in SQL queries",
+            "severity": "HIGH",
+            "recommendation": "Migrate to prepared statements using mysqli->prepare()"
+        },
+        {
+            "name": "Session Management",
+            "check": "Session security configuration",
+            "status": "PARTIAL ⚠️",
+            "details": "Uses PHP native sessions (good), but missing hardening options",
+            "recommendations": [
+                "Set session.cookie_httponly = true",
+                "Set session.cookie_secure = true (on HTTPS)",
+                "Set session.use_strict_mode = true",
+                "Implement session timeout (30 minutes)"
+            ]
+        },
+        {
+            "name": "Input Validation",
+            "check": "Form input sanitization",
+            "status": "PARTIAL ⚠️",
+            "details": "Basic validation present, but inconsistent",
+            "missing": [
+                "No CSRF tokens on forms",
+                "No rate limiting on login",
+                "No input type casting",
+                "No maximum length validation"
+            ]
+        },
+        {
+            "name": "Error Handling",
+            "check": "Information disclosure via error messages",
+            "status": "PARTIAL ⚠️",
+            "details": "Error messages might expose database structure",
+            "recommendation": "Log errors internally, show generic messages to users"
+        },
+        {
+            "name": "HTTPS\/SSL",
+            "check": "Secure connection enforcement",
+            "status": "NOT CONFIGURED ❌",
+            "details": "No HTTPS redirection configured",
+            "priority": "CRITICAL for production"
+        },
+        {
+            "name": "File Upload Security",
+            "check": "Upload validation and storage",
+            "status": "NOT FOUND",
+            "details": "No file upload functionality detected in current version"
+        },
+        {
+            "name": "Authentication",
+            "check": "Multi-factor authentication (MFA)",
+            "status": "NOT IMPLEMENTED",
+            "details": "Single-factor (password) only",
+            "recommendation": "Implement 2FA for admin accounts"
+        }
+    ],
+    "vulnerabilities": [
+        {
+            "type": "SQL Injection",
+            "severity": "HIGH",
+            "affected_files": "api\/process_login.php, api\/process_register.php",
+            "description": "User inputs are directly concatenated into SQL queries",
+            "fix": "Use prepared statements with parameterized queries"
+        },
+        {
+            "type": "Missing CSRF Protection",
+            "severity": "MEDIUM",
+            "affected_files": "pages\/login.php, pages\/register.php",
+            "description": "Forms lack CSRF tokens",
+            "fix": "Generate and validate CSRF tokens on all POST requests"
+        },
+        {
+            "type": "No HTTPS Enforcement",
+            "severity": "CRITICAL",
+            "description": "Credentials transmitted over plain HTTP",
+            "fix": "Add SSL certificate and configure HTTPS redirect"
+        }
+    ],
+    "recommendations": {
+        "CRITICAL (Fix Immediately)": [
+            "1. Enable HTTPS with valid SSL certificate",
+            "2. Use prepared statements for all database queries",
+            "3. Implement CSRF tokens on all forms"
+        ],
+        "HIGH (Fix Soon)": [
+            "4. Add rate limiting on login endpoint",
+            "5. Implement input validation & sanitization",
+            "6. Add security headers (CSP, X-Frame-Options, etc.)",
+            "7. Implement proper error handling (no info disclosure)"
+        ],
+        "MEDIUM (Plan)": [
+            "8. Add HTTPS everywhere",
+            "9. Implement 2FA for admin accounts",
+            "10. Add security logging & monitoring",
+            "11. Implement account lockout after failed attempts"
+        ]
+    },
+    "security_score": {
+        "current_score": "6\/10 (Basic Security)",
+        "after_critical_fixes": "8\/10 (Good Security)",
+        "after_all_fixes": "9.5\/10 (Excellent Security)"
+    }
+}

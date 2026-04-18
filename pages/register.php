@@ -1,9 +1,14 @@
 <?php
 session_start();
+include_once(__DIR__ . '/../config/security.php');
+
 if (isset($_SESSION['email'])) {
     header('Location: account.php');
     exit;
 }
+
+// Generate CSRF token
+$csrf_token = generateCSRFToken();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -52,17 +57,11 @@ if (isset($_SESSION['email'])) {
             <?php endif; ?>
             
             <form class="auth-form" action="../api/process_register.php" method="POST">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                    <div class="form-group">
-                        <label class="form-label" for="firstname">Prénom</label>
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Jean" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label" for="lastname">Nom</label>
-                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Dupont" required>
-                    </div>
-                </div>
+                <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
+                
+                <div class="form-group">
+                    <label class="form-label" for="name">Nom complet</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jean Dupont" required>
                 
                 <div class="form-group">
                     <label class="form-label" for="email">Adresse email</label>

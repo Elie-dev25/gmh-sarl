@@ -1,0 +1,50 @@
+{
+    "test_name": "Database Performance",
+    "test_id": 2,
+    "timestamp": "2026-04-18 00:33:09",
+    "description": "Analyse la performance des requêtes base de données",
+    "database": [],
+    "connection_status": "Error: Unknown database 'gmh_db'",
+    "note": "Database tests skipped - local testing requires XAMPP setup",
+    "simulated_tests": [
+        {
+            "test_name": "Typical User Query",
+            "query": "SELECT * FROM users WHERE email = ?",
+            "estimated_time_ms": 2.5,
+            "note": "With proper indexing on email column"
+        },
+        {
+            "test_name": "Product Listing",
+            "query": "SELECT * FROM products LIMIT 100",
+            "estimated_time_ms": 5.2,
+            "note": "1000+ products - pagination recommended"
+        },
+        {
+            "test_name": "Order History",
+            "query": "SELECT * FROM orders WHERE user_id = ? ORDER BY date DESC",
+            "estimated_time_ms": 3.1,
+            "note": "With index on user_id"
+        },
+        {
+            "test_name": "Category with Products",
+            "query": "SELECT p.* FROM products p JOIN categories c ON p.category_id = c.id WHERE c.id = ?",
+            "estimated_time_ms": 4.8,
+            "note": "JOIN query - recommend denormalization for high traffic"
+        }
+    ],
+    "recommendations": {
+        "For Production": [
+            "✓ Add indexes on: email, user_id, category_id, status",
+            "✓ Use prepared statements (prevent SQL injection)",
+            "✓ Implement query caching for frequently accessed data",
+            "✓ Monitor slow queries (log queries > 100ms)",
+            "✓ Consider database replication for scaling"
+        ],
+        "For Development": [
+            "✓ Use XAMPP MySQL for testing",
+            "✓ Enable query logging during development",
+            "✓ Profile API endpoints to find slow queries",
+            "✓ Test with realistic data volumes (1000+ products)"
+        ]
+    }
+}

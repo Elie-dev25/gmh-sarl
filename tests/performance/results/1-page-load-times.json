@@ -1,0 +1,217 @@
+{
+    "test_name": "Page Load Times",
+    "test_id": 1,
+    "timestamp": "2026-04-18 00:33:08",
+    "description": "Mesure le temps de réponse des pages principales",
+    "samples_per_page": 10,
+    "pages": [
+        {
+            "page": "index.php",
+            "label": "Accueil",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 4.8,
+                "min_ms": 4.19,
+                "max_ms": 5.69,
+                "std_dev": 0.54,
+                "median_ms": 5.61,
+                "p95_ms": 4.23,
+                "p99_ms": 4.23
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 29040,
+                "min_bytes": 29040,
+                "max_bytes": 29040
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/produits.php",
+            "label": "Produits",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 7.73,
+                "min_ms": 5.47,
+                "max_ms": 20.93,
+                "std_dev": 4.42,
+                "median_ms": 5.47,
+                "p95_ms": 6.15,
+                "p99_ms": 6.15
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 226591,
+                "min_bytes": 226591,
+                "max_bytes": 226591
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/about.php",
+            "label": "À propos",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 5,
+                "min_ms": 4.52,
+                "max_ms": 6.37,
+                "std_dev": 0.54,
+                "median_ms": 4.66,
+                "p95_ms": 6.37,
+                "p99_ms": 6.37
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 28756,
+                "min_bytes": 28756,
+                "max_bytes": 28756
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/contact.php",
+            "label": "Contact",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 10.07,
+                "min_ms": 4.42,
+                "max_ms": 51.82,
+                "std_dev": 14.01,
+                "median_ms": 10.22,
+                "p95_ms": 4.83,
+                "p99_ms": 4.83
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 24931,
+                "min_bytes": 24931,
+                "max_bytes": 24931
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/login.php",
+            "label": "Login",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 3.79,
+                "min_ms": 3.09,
+                "max_ms": 4.57,
+                "std_dev": 0.46,
+                "median_ms": 3.7,
+                "p95_ms": 3.09,
+                "p99_ms": 3.09
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 4131,
+                "min_bytes": 4131,
+                "max_bytes": 4131
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/register.php",
+            "label": "Inscription",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 4.19,
+                "min_ms": 3.37,
+                "max_ms": 5.42,
+                "std_dev": 0.69,
+                "median_ms": 4.54,
+                "p95_ms": 4.07,
+                "p99_ms": 4.07
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 6038,
+                "min_bytes": 6038,
+                "max_bytes": 6038
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/services.php",
+            "label": "Services",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 9.32,
+                "min_ms": 4.6,
+                "max_ms": 26.35,
+                "std_dev": 6.97,
+                "median_ms": 4.6,
+                "p95_ms": 5.11,
+                "p99_ms": 5.11
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 34072,
+                "min_bytes": 34072,
+                "max_bytes": 34072
+            },
+            "status": "✅ Excellent"
+        },
+        {
+            "page": "pages\/galerie.php",
+            "label": "Galerie",
+            "type": "public",
+            "metrics": {
+                "avg_ms": 9.84,
+                "min_ms": 4.22,
+                "max_ms": 38.18,
+                "std_dev": 10.22,
+                "median_ms": 4.24,
+                "p95_ms": 38.18,
+                "p99_ms": 38.18
+            },
+            "reliability": {
+                "successes": 10,
+                "failures": 0,
+                "success_rate": "100%"
+            },
+            "size": {
+                "avg_bytes": 40731,
+                "min_bytes": 40731,
+                "max_bytes": 40731
+            },
+            "status": "✅ Excellent"
+        }
+    ],
+    "summary": {
+        "total_pages_tested": 8,
+        "global_avg_ms": 6.84,
+        "global_min_ms": 3.79,
+        "global_max_ms": 10.07,
+        "pages_under_50ms": 8,
+        "pages_over_100ms": 0
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "test_name": "Assets Optimization Analysis",
+    "test_id": 5,
+    "timestamp": "2026-04-18 00:33:11",
+    "description": "Analyse l'optimisation des CSS, JS, et images",
+    "assets": [
+        {
+            "type": "CSS",
+            "file": "assets\/css\/bootstrap.min.css",
+            "label": "Framework Bootstrap",
+            "size": {
+                "bytes": 155758,
+                "kb": 152.11,
+                "with_gzip_kb": 60.84,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "Yes ✅",
+                "gzip_enabled": "No - enable in production",
+                "recommendation": "Already optimized"
+            }
+        },
+        {
+            "type": "CSS",
+            "file": "assets\/css\/gmh-global.css",
+            "label": "Global Design System",
+            "size": {
+                "bytes": 35305,
+                "kb": 34.48,
+                "with_gzip_kb": 13.79,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "No - minify it",
+                "gzip_enabled": "No - enable in production",
+                "recommendation": "Minify and enable gzip"
+            }
+        },
+        {
+            "type": "CSS",
+            "file": "assets\/css\/home-modern.css",
+            "label": "Homepage Styles",
+            "size": {
+                "bytes": 15623,
+                "kb": 15.26,
+                "with_gzip_kb": 6.1,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "No - minify it",
+                "gzip_enabled": "No - enable in production",
+                "recommendation": "Minify and enable gzip"
+            }
+        },
+        {
+            "type": "CSS",
+            "file": "assets\/css\/pages.css",
+            "label": "Pages Styles",
+            "size": {
+                "bytes": 23062,
+                "kb": 22.52,
+                "with_gzip_kb": 9.01,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "No - minify it",
+                "gzip_enabled": "No - enable in production",
+                "recommendation": "Minify and enable gzip"
+            }
+        },
+        {
+            "type": "JavaScript",
+            "file": "assets\/js\/jquery-3.7.1.min.js",
+            "label": "jQuery Library",
+            "size": {
+                "bytes": 87533,
+                "kb": 85.48,
+                "with_gzip_kb": 34.19,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "Yes ✅",
+                "lazy_loading": "Recommended for main.js",
+                "async_defer": "async recommended"
+            }
+        },
+        {
+            "type": "JavaScript",
+            "file": "assets\/js\/bootstrap.bundle.min.js",
+            "label": "Bootstrap JS",
+            "size": {
+                "bytes": 78635,
+                "kb": 76.79,
+                "with_gzip_kb": 30.72,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "Yes ✅",
+                "lazy_loading": "Recommended for main.js",
+                "async_defer": "defer recommended"
+            }
+        },
+        {
+            "type": "JavaScript",
+            "file": "assets\/js\/main.js",
+            "label": "Custom Scripts",
+            "size": {
+                "bytes": 10503,
+                "kb": 10.26,
+                "with_gzip_kb": 4.1,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "No - minify it",
+                "lazy_loading": "Recommended for main.js",
+                "async_defer": "defer recommended"
+            }
+        },
+        {
+            "type": "JavaScript",
+            "file": "assets\/js\/app.js",
+            "label": "App Logic",
+            "size": {
+                "bytes": 587,
+                "kb": 0.57,
+                "with_gzip_kb": 0.23,
+                "compression_potential": "60%"
+            },
+            "optimization": {
+                "minified": "No - minify it",
+                "lazy_loading": "Recommended for main.js",
+                "async_defer": "defer recommended"
+            }
+        },
+        {
+            "type": "Images",
+            "directory": "assets\/images\/demos\/demo-21\/",
+            "label": "Demo images",
+            "count": 14,
+            "total_size_kb": 694.02,
+            "optimization": {
+                "lazy_loading": "Not implemented",
+                "webp_format": "Not implemented",
+                "responsive_images": "Not implemented",
+                "compression_potential": "30-50%"
+            }
+        },
+        {
+            "type": "Images",
+            "directory": "images\/",
+            "label": "Content images",
+            "count": 57,
+            "total_size_kb": 14152.86,
+            "optimization": {
+                "lazy_loading": "Not implemented",
+                "webp_format": "Not implemented",
+                "responsive_images": "Not implemented",
+                "compression_potential": "30-50%"
+            }
+        }
+    ],
+    "summary": {
+        "total_size_kb": 15244.34,
+        "with_gzip_compression_kb": 6097.74,
+        "potential_savings_kb": 9146.61,
+        "css_percentage": "1.5%",
+        "js_percentage": "1.1%",
+        "images_percentage": "97.4%"
+    },
+    "optimization_recommendations": {
+        "IMMEDIATE (High Impact)": [
+            "1. Enable gzip compression (saves 9147 KB per page)",
+            "2. Add cache control headers (browser caching)",
+            "3. Minify all CSS files (2-3% additional savings)",
+            "4. Implement async\/defer loading for JS"
+        ],
+        "SHORT TERM (Medium Impact)": [
+            "5. Add CDN for static assets (faster delivery)",
+            "6. Implement lazy loading for images",
+            "7. Convert images to WebP format (30-50% savings)",
+            "8. Split CSS into critical path CSS"
+        ],
+        "LONG TERM (Nice to Have)": [
+            "9. Consider CSS-in-JS for SPA migration",
+            "10. Bundle optimization (tree shaking)",
+            "11. Service worker for offline support",
+            "12. Resource hints (prefetch, preconnect)"
+        ]
+    }
+}

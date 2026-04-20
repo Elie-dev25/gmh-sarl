@@ -1,8 +1,9 @@
 <?php
 $page_title = 'Catalogue - Page 2';
 $page_description = 'Découvrez notre catalogue complet de produits GM&H.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
+
 
 <!-- CSS supplémentaires pour cette page -->
 <link rel="stylesheet" href="../assets/css/plugins/owl-carousel/owl.carousel.css">
@@ -41,7 +42,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat16.png" alt="image desc">
+                                        <img src="../image/cat16.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -70,7 +71,7 @@ include '../includes/header.php';
                                         <li><span style="font-weight: bold;">Grand écran LCD, </span>hauteur de chiffres 25 mm Dimensions afficheur L×P×H 235×115×52 mm Hauteur hors tout, y compris les pieds réglables 110 mm Longueur de câble afficheur env. 5 m Fonctionnement avec piles possible, 4×1.5 V AA non compris dans la livraison. Durée de service jusqu‘à 60h Poids net ca. 55 kg Température ambiante tolérée -10°C/40 °C</li>
                                         <li><span style="font-weight: bold;">Accessoires: <br></span> -Housse d’utilisation transparente sur l‘afficheur, lot de 5, KERN EOBA04BS05. <br>  -Colonne pour placer l‘afficheur verticalement, hauteur de la colonne env. 1000 mm, KERN EOB-A02B.</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -80,7 +81,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media ">
                                     <a href="single.html">
-                                        <img src="../image/cat15.png" alt="image desc">
+                                        <img src="../image/cat15.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -115,7 +116,7 @@ include '../includes/header.php';
                                             <li>238×51×206 mm </li>
                   
                                         </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -126,7 +127,7 @@ include '../includes/header.php';
                                 <figure class="entry-media">
                                     <div class="owl-carousel owl-simple owl-light " data-toggle="owl">
                                         <a href="single.html">
-                                            <img src="../image/cat17.png" alt="image desc">
+                                            <img src="../image/cat17.png" alt="Description du produit">
                                         </a>
                                     </div><!-- End .owl-carousel -->
                                 </figure><!-- End .entry-media -->
@@ -161,7 +162,7 @@ include '../includes/header.php';
                                         <li>Balance de table </li>
                                         <li>Balance Plate-Forme</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -171,7 +172,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat18.png" alt="image desc">
+                                        <img src="../image/cat18.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -212,7 +213,7 @@ include '../includes/header.php';
                                         <li><span style="font-weight: bold;">Capteur Single-Point,</span> aluminium, (1×3000 e), protection contre la poussière et les projections d‘eau IP65</li>
                                         <li><span style="font-weight: bold;">Housse d‘utilisation transparente</span> en série</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -222,7 +223,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat19.png" alt="image desc">
+                                        <img src="../image/cat19.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -246,7 +247,7 @@ include '../includes/header.php';
                                     <div class="entry-content">
                                        <ul style=" list-style-type: disc;  text-align: left;">
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -256,7 +257,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat20.png" alt="image desc">
+                                        <img src="../image/cat20.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -281,7 +282,7 @@ include '../includes/header.php';
                                         <ul style=" list-style-type: disc;  text-align: left;">
                                             <p>Crochet peseur robuste haute résolution jusqu’à 12 tonnes, désormais également avec approbation d‘homologation [M] ou type de protection IP67 Balance à trois plages : Idéale pour peser des charges maximales élevées sans renoncer à une résolution élevée dans la plage de charge basse. Ceci permet de remplacer trois balances par une seule et donc d’économiser de la place et de l’argent ! <br> <i style="font-weight: bold;">Plusieurs types de Crochets peseurs disponibles chez GMH!!!</i> </p>
                                         </ul>
-                                        <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                        <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                      </div><!-- End .entry-content -->
                                     </div><!-- End .entry-body -->
                                     </article><!-- End .entry -->
@@ -291,7 +292,7 @@ include '../includes/header.php';
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat21.png" alt="image desc">
+                                                    <img src="../image/cat21.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
                                     
@@ -330,19 +331,18 @@ include '../includes/header.php';
                                                         <li>Livraison 1 pièce, KERN VHBA02.</li>
                                                        </ul>
                                                       
-                                                   <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                   <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .entry-content -->
                                             </div><!-- End .entry-body -->
                                         </article><!-- End .entry -->
                                     </div><!-- End .entry-item -->
-                                    
 
-                
+
                                     <div class="entry-item hobbies col-sm-6">
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat22.png" alt="image desc">
+                                                    <img src="../image/cat22.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
             
@@ -373,7 +373,7 @@ include '../includes/header.php';
                                                         <li>Bol de pesée: 500 x 305 x 60 mm</li>
                                                         <li>Alimentation: 3 piles AA 1,5 volts (non incl)</li>
                                                        </ul>
-                                                    <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                    <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                  </div><!-- End .entry-content -->
                                                 </div><!-- End .entry-body -->
                                                 </article><!-- End .entry -->
@@ -384,7 +384,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat23.png" alt="image desc">
+                                                                <img src="../image/cat23.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -420,7 +420,7 @@ include '../includes/header.php';
                                                                     <li>Port d’accès pour Sonde Externe: 2x Disponible.</li>
                                                                     <li>Option: RS485 et port d’alarme à distance, enregistreur graphique, système de sauvegarde de CO2</li>
                                                                 </ul>
-                                                               <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                               <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                             </div><!-- End .entry-content -->
                                                         </div><!-- End .entry-body -->
                                                     </article><!-- End .entry -->
@@ -432,7 +432,7 @@ include '../includes/header.php';
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat24.png" alt="image desc">
+                                                    <img src="../image/cat24.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
             
@@ -466,7 +466,7 @@ include '../includes/header.php';
                                                         <li>Option: RS485 et port d’alarme à distance.</li>
                                                         <li>Certificat: ISO 13485, ISO9001</li>
                                                        </ul>
-                                                    <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                    <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                  </div><!-- End .entry-content -->
                                                 </div><!-- End .entry-body -->
                                                 </article><!-- End .entry -->
@@ -478,7 +478,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat25.png" alt="image desc">
+                                                                <img src="../image/cat25.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -503,7 +503,7 @@ include '../includes/header.php';
                                                                     <li>Alarme: Visuelle et audio <br>Alarme de température élevée / basse, <br> Alarme de température ambiante élevée, <br>Alarme de défaillance du capteur, alarme de porte</li>
                                                                     <li>Certificat: ISO9001, ISO 14001, ISO13485, CE</li>
                                                                 </ul>
-                                                               <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                               <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                             </div><!-- End .entry-content -->
                                                         </div><!-- End .entry-body -->
                                                     </article><!-- End .entry -->
@@ -514,7 +514,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat25.png" alt="image desc">
+                                                                <img src="../image/cat25.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -528,7 +528,7 @@ include '../includes/header.php';
                                                             </div><!-- End .entry-meta -->
                         
                                                             <h2 class="entry-title">
-                                                                
+                                                                 Réfrigérateur médical combiné
                                                             </h2><!-- End .entry-title -->
                         
                                                             <div class="entry-content">
@@ -538,7 +538,7 @@ include '../includes/header.php';
                                                                     <li>Alarme: Visuelle et audio <br>Alarme de température élevée / basse,<br>Alarme de température ambiante élevée, <br>Alarme de défaillance du capteur,alarme de porte entrouverte. <br></li>
                                                                     <li>Port d’accès pour Sonde Externe: 1x Disponible</li>
                                                                    </ul>
-                                                                <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                              </div><!-- End .entry-content -->
                                                             </div><!-- End .entry-body -->
                                                             </article><!-- End .entry -->
@@ -549,7 +549,7 @@ include '../includes/header.php';
                                                                 <article class="entry entry-grid text-center">
                                                                     <figure class="entry-media">
                                                                         <a href="single.html">
-                                                                            <img src="../image/cat27.png" alt="image desc">
+                                                                            <img src="../image/cat27.png" alt="Description du produit">
                                                                         </a>
                                                                     </figure><!-- End .entry-media -->
                                     
@@ -570,7 +570,7 @@ include '../includes/header.php';
                                                                                 
                                                                                 <p>Réfrigérateur et congélateur médical <br>Réfrigérateur combiné congélateur avec compartiment supérieur 2° c ~-8° c et inférieur-10 ~-25° c <br> Contrôle séparé de la chambre de réfrigération supérieure et de la chambre de congélation inférieure avec des compresseurs séparés<br> Refroidissement direct et contrôle électronique de la température pour une réfrigération rapide et une température constante <br>Equipé de tiroirs réfrigérés en tôle et de plaques acryliques <br>Affichage de température numérique pour contrôler précisément la température et surveiller l’état de fonctionnement clairement<br> Assurer un stockage sécuritaire des échantillons avec serrure de porte indépendante inter-pièces et cadenas externe indépendant</p>
                                                                                </ul>
-                                                                           <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                           <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                                         </div><!-- End .entry-content -->
                                                                     </div><!-- End .entry-body -->
                                                                 </article><!-- End .entry -->
@@ -581,7 +581,7 @@ include '../includes/header.php';
                                                                 <article class="entry entry-grid text-center">
                                                                     <figure class="entry-media">
                                                                         <a href="single.html">
-                                                                            <img src="../image/cat28.png" alt="image desc">
+                                                                            <img src="../image/cat28.png" alt="Description du produit">
                                                                         </a>
                                                                     </figure><!-- End .entry-media -->
                                     
@@ -612,7 +612,7 @@ include '../includes/header.php';
                                                                                 <li>Option: RS485 et port d’alarme à distance, enregistreur gra - phique,</li>
                                                                                 <li>Système de sauvegarde de CO2</li>
                                                                                </ul>
-                                                                            <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                            <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                                          </div><!-- End .entry-content -->
                                                                         </div><!-- End .entry-body -->
                                                                         </article><!-- End .entry -->
@@ -746,12 +746,12 @@ include '../includes/header.php';
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
 
-        <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+        <ul class="nav nav-pills-mobile nav-border-anim">
             <li class="nav-item">
                 <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
             <!-- </li>
             <li class="nav-item">
-                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
             </li> -->
         </ul>
 
@@ -822,13 +822,13 @@ include '../includes/header.php';
             <div class="form-box">
                 <div class="form-tab">
                     <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill">
+
                         <li class="nav-item">
                             <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">S'inscrire</a>
-                        </li>
                     </ul>
                     <div class="tab-content" id="tab-content-5">
                         <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">

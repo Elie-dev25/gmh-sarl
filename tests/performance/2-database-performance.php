@@ -32,7 +32,16 @@ try {
         throw new Exception("mysqli extension not loaded");
     }
     
-    $conn = @new mysqli('localhost', 'root', '', 'gmh_db');
+    // Load environment configuration
+    require_once __DIR__ . '/../../config/env.php';
+    Env::load();
+    
+    $db_host = Env::get('DB_HOST', 'localhost');
+    $db_user = Env::get('DB_USERNAME', 'root');
+    $db_pass = Env::get('DB_PASSWORD', '');
+    $db_name = Env::get('DB_NAME', 'gmh_db');
+    
+    $conn = @new mysqli($db_host, $db_user, $db_pass, $db_name);
     
     $end = microtime(true);
     $db_connection_time = ($end - $start) * 1000;

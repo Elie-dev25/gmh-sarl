@@ -13,7 +13,7 @@ if (!isset($_SESSION['user_id'])) {
 $user_id = $_SESSION['user_id'];
 
 // Inclure la connexion à la base de données
-include('db_connection.php');
+include_once __DIR__ . '/../config/db_connection.php';
 
 // Requête pour récupérer les informations de l'utilisateur connecté
 $sql = "SELECT name, email, phone FROM users WHERE id = ?";
@@ -41,7 +41,7 @@ $conn->close();
 
 $page_title = 'Mon Espace';
 $page_description = 'Gérez votre compte GM&H.';
-include '../includes/header.php';
+include_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- CSS supplémentaires pour cette page -->
@@ -252,7 +252,7 @@ include '../includes/header.php';
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
 
-        <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+        <ul class="nav nav-pills-mobile nav-border-anim">
             <li class="nav-item">
                 <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
             <!-- </li>
@@ -329,7 +329,7 @@ include '../includes/header.php';
             <div class="form-box">
                 <div class="form-tab">
                     <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
                             <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
                         </li>

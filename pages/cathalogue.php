@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Catalogue';
 $page_description = 'Découvrez notre catalogue complet de produits GM&H.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
 
 <!-- CSS supplémentaires pour cette page -->
@@ -41,7 +41,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat1.png" alt="image desc">
+                                        <img src="../image/cat1.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -73,7 +73,7 @@ include '../includes/header.php';
                                         <li>Port de communication: WIFI</li>
                                         <li>Batterie Stand-By: 3.7V 1100mAH lithium</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -83,7 +83,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media ">
                                     <a href="single.html">
-                                        <img src="../image/cat2.png" alt="image desc">
+                                        <img src="../image/cat2.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -119,7 +119,7 @@ include '../includes/header.php';
                                         <li>Port de communication: WIFI</li>
                                         <li>Batterie Stand-By: 3.7V 1100mAH lithium</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -130,7 +130,7 @@ include '../includes/header.php';
                                 <figure class="entry-media">
                                     <div class="owl-carousel owl-simple owl-light " data-toggle="owl">
                                         <a href="single.html">
-                                            <img src="../image/cat3.jpg" alt="image desc">
+                                            <img src="../image/cat3.jpg" alt="Description du produit">
                                         </a>
                                     </div><!-- End .owl-carousel -->
                                 </figure><!-- End .entry-media -->
@@ -164,7 +164,7 @@ include '../includes/header.php';
                                         <li>Génère des rapports en PDF automatiquement sur les systèmes Windows et MAC</li>
                                         <li>Port de communication: USB</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -174,7 +174,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat4.png" alt="image desc">
+                                        <img src="../image/cat4.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -211,7 +211,7 @@ include '../includes/header.php';
                                         <li>Logiciel de gestion des données supporté par Windows et MAC</li>
                                         <li>Port de communication: USB</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -221,7 +221,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat5.jpg" alt="image desc">
+                                        <img src="../image/cat5.jpg" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -259,7 +259,7 @@ include '../includes/header.php';
                                         <li>Port de communication: USB</li>
                                         <li>Resistance à L’eau: IP67 pour RC-51H</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -269,7 +269,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat6.png" alt="image desc">
+                                        <img src="../image/cat6.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -302,7 +302,7 @@ include '../includes/header.php';
                                          <li>Génère des rapports en PDF/WORD/Excel/TXT</li>
                                          <li>Logiciel de gestion des données supporté par Windows et MAC</li>
                                         </ul>
-                                        <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                        <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                      </div><!-- End .entry-content -->
                                     </div><!-- End .entry-body -->
                                     </article><!-- End .entry -->
@@ -312,7 +312,7 @@ include '../includes/header.php';
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat8.png" alt="image desc">
+                                                    <img src="../image/cat8.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
                                     
@@ -368,19 +368,18 @@ include '../includes/header.php';
                                                         <li>Temps de réinitialisation: deux à dix secondes;</li>
                                                         <li>Alimentation 6V DC, quatre piles alcalines AAA</li>
                                                        </ul>
-                                                   <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                   <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .entry-content -->
                                             </div><!-- End .entry-body -->
                                         </article><!-- End .entry -->
                                     </div><!-- End .entry-item -->
-                                    
 
-                
+
                                     <div class="entry-item hobbies col-sm-6">
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat9.png" alt="image desc">
+                                                    <img src="../image/cat9.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
             
@@ -419,7 +418,7 @@ include '../includes/header.php';
                                                         <li>Réfrigération</li>
                                                         <li>Utilisation en laboratoire</li>
                                                        </ul>
-                                                    <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                    <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                  </div><!-- End .entry-content -->
                                                 </div><!-- End .entry-body -->
                                                 </article><!-- End .entry -->
@@ -430,7 +429,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat7.png" alt="image desc">
+                                                                <img src="../image/cat7.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -465,7 +464,7 @@ include '../includes/header.php';
                                                                     <li>Port de communication: USB</li>
                                                                     <li>Resistance à L’eau: IP67 pour RC-51H</li>
                                                                 </ul>
-                                                               <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                               <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                             </div><!-- End .entry-content -->
                                                         </div><!-- End .entry-body -->
                                                     </article><!-- End .entry -->
@@ -477,7 +476,7 @@ include '../includes/header.php';
                                         <article class="entry entry-grid text-center">
                                             <figure class="entry-media">
                                                 <a href="single.html">
-                                                    <img src="../image/cat10.png" alt="image desc">
+                                                    <img src="../image/cat10.png" alt="Description du produit">
                                                 </a>
                                             </figure><!-- End .entry-media -->
             
@@ -505,7 +504,7 @@ include '../includes/header.php';
                                                         <li>Poids: 8 kg</li>
                                                         <li>Consommation électrique: 50 W </li>
                                                        </ul>
-                                                    <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                    <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                  </div><!-- End .entry-content -->
                                                 </div><!-- End .entry-body -->
                                                 </article><!-- End .entry -->
@@ -517,7 +516,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat11.png" alt="image desc">
+                                                                <img src="../image/cat11.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -543,7 +542,7 @@ include '../includes/header.php';
                                                                     <li>Microscope métallurgique</li>
                                                                     <li>Microscope inversé</li>
                                                                 </ul>
-                                                               <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                               <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                             </div><!-- End .entry-content -->
                                                         </div><!-- End .entry-body -->
                                                     </article><!-- End .entry -->
@@ -554,7 +553,7 @@ include '../includes/header.php';
                                                     <article class="entry entry-grid text-center">
                                                         <figure class="entry-media">
                                                             <a href="single.html">
-                                                                <img src="../image/cat12.png" alt="image desc">
+                                                                <img src="../image/cat12.png" alt="Description du produit">
                                                             </a>
                                                         </figure><!-- End .entry-media -->
                         
@@ -583,7 +582,7 @@ include '../includes/header.php';
                                                                     <li>Poids: 8 kg</li>
                                                                     <li>Consommation électrique: 50 W </li>
                                                                    </ul>
-                                                                <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                              </div><!-- End .entry-content -->
                                                             </div><!-- End .entry-body -->
                                                             </article><!-- End .entry -->
@@ -594,7 +593,7 @@ include '../includes/header.php';
                                                                 <article class="entry entry-grid text-center">
                                                                     <figure class="entry-media">
                                                                         <a href="single.html">
-                                                                            <img src="../image/cat13.png" alt="image desc">
+                                                                            <img src="../image/cat13.png" alt="Description du produit">
                                                                         </a>
                                                                     </figure><!-- End .entry-media -->
                                     
@@ -615,7 +614,7 @@ include '../includes/header.php';
                                                                                 <p style="font-weight: bold;">Caractéristiques :</p>
                                                                                 <p>Avec l’éclairage col-de-cygne LED 20 W OZB-A4516 à faisceau lumineux focalisable, vous pouvez régler votre éclairage individu- ellement. Un rayonnement ponctuel ou dispersé permet un éclairage optimal de votre échantillon</p>
                                                                                </ul>
-                                                                           <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                           <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                                         </div><!-- End .entry-content -->
                                                                     </div><!-- End .entry-body -->
                                                                 </article><!-- End .entry -->
@@ -626,7 +625,7 @@ include '../includes/header.php';
                                                                 <article class="entry entry-grid text-center">
                                                                     <figure class="entry-media">
                                                                         <a href="single.html">
-                                                                            <img src="../image/cat14.png" alt="image desc">
+                                                                            <img src="../image/cat14.png" alt="Description du produit">
                                                                         </a>
                                                                     </figure><!-- End .entry-media -->
                                     
@@ -647,7 +646,7 @@ include '../includes/header.php';
                                                                             <ul style=" list-style-type: disc;  text-align: left;">
 
                                                                                </ul>
-                                                                            <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                                                            <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                                                          </div><!-- End .entry-content -->
                                                                         </div><!-- End .entry-body -->
                                                                         </article><!-- End .entry -->
@@ -781,12 +780,13 @@ include '../includes/header.php';
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
 
-        <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+        <ul class="nav nav-pills-mobile nav-border-anim">
             <li class="nav-item">
                 <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+
             <!-- </li>
             <li class="nav-item">
-                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
             </li> -->
         </ul>
 
@@ -857,13 +857,15 @@ include '../includes/header.php';
             <div class="form-box">
                 <div class="form-tab">
                     <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill">
+
                         <li class="nav-item">
                             <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">S'inscrire</a>
-                        </li>
+
                     </ul>
                     <div class="tab-content" id="tab-content-5">
                         <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">

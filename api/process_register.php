@@ -1,8 +1,11 @@
 <?php
 // process_register.php - SECURE VERSION with prepared statements & CSRF
+// Skip execution during PHPUnit coverage analysis
+if (defined('PHPUNIT_RUNNING')) { return; }
+
 session_start();
-include(__DIR__ . '/../config/db_connection.php');
-include(__DIR__ . '/../config/security.php');
+include_once __DIR__ . '/../config/db_connection.php';
+include_once __DIR__ . '/../config/security.php';
 
 // Verify CSRF token
 if (!isset($_POST['csrf_token']) || !verifyCSRFToken($_POST['csrf_token'])) {

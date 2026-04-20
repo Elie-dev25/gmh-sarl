@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Galerie';
 $page_description = 'Galerie de produits GM&H.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
 
 <!-- CSS supplémentaires pour cette page -->
@@ -262,7 +262,7 @@ include '../includes/header.php';
             <!-- Fenêtre modale pour afficher les images en grand -->
             <div id="modal" class="modal">
                 <span class="close">&times;</span>
-                <img class="modal-content" id="modal-image">
+                <img class="modal-content" id="modal-image" alt="Produit agrandi">
             </div>
         
             <script src="scripts/galerie.js"></script>
@@ -391,12 +391,13 @@ include '../includes/header.php';
 <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
 </form>
 
-<ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+<ul class="nav nav-pills-mobile nav-border-anim">
 <li class="nav-item">
     <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+
 <!-- </li>
 <li class="nav-item">
-    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
 </li> -->
 </ul>
 
@@ -467,12 +468,14 @@ include '../includes/header.php';
 <div class="form-box">
     <div class="form-tab">
         <!-- Vos onglets de formulaire de connexion et d'inscription -->
-        <ul class="nav nav-pills nav-fill" role="tablist">
+        <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
                 <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">S'inscrire</a>
+
             </li>
         </ul>
         <div class="tab-content" id="tab-content-5">
@@ -541,9 +544,8 @@ include '../includes/header.php';
 <!-- Plugins JS File -->
  <!-- Ajoutez le script Masonry dans la section <head> ou juste avant la fermeture de la balise <body> -->
 
-</script>
-
 <script src="../assets/js/jquery.min.js"></script>
+
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/jquery.hoverIntent.min.js"></script>
 <script src="../assets/js/jquery.waypoints.min.js"></script>

@@ -91,7 +91,7 @@ class SecurityTest extends TestCase
     {
         recordFailedLogin('127.0.0.1');
         
-        $this->assertIsset($_SESSION['rate_limit_login_127.0.0.1_attempts']);
+        $this->assertArrayHasKey('rate_limit_login_127.0.0.1_attempts', $_SESSION);
         $this->assertEquals(1, $_SESSION['rate_limit_login_127.0.0.1_attempts']);
     }
 

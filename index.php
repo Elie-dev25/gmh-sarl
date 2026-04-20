@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Accueil';
 $page_description = 'GM&H - Votre partenaire de confiance pour les solutions informatiques, healthcare et services professionnels en Afrique.';
-include 'includes/header.php';
+include_once 'includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -248,4 +248,4 @@ include 'includes/header.php';
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+<?php include_once 'includes/footer.php'; ?>

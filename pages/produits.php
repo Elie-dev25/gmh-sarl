@@ -1,8 +1,9 @@
 <?php
 $page_title = 'Produits';
 $page_description = 'Découvrez notre gamme complète de produits informatiques, healthcare et solutions professionnelles.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
+
 
 <!-- CSS supplémentaires pour cette page -->
 <link rel="stylesheet" href="../assets/css/plugins/owl-carousel/owl.carousel.css">
@@ -90,7 +91,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/1.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/1.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -102,7 +104,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/2.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/2.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -114,7 +117,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/3.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/3.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -126,7 +130,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/4.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/4.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -138,7 +143,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/5.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/5.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -150,7 +156,8 @@ include '../includes/header.php';
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="../assets/images/demos/demo-4/cats/6.png" alt="Category image">
+                                        <img src="../assets/images/demos/demo-4/cats/6.png" alt="Catégorie de produit">
+
                                     </span>
                                 </figure>
 
@@ -174,7 +181,7 @@ include '../includes/header.php';
                             <div class="banner-content">
                                 <h4 class="banner-subtitle"><a href="#">MADE IN GERMANY</a></h4><!-- End .banner-subtitle -->
                                 <h3 class="banner-title"><a href="#"><strong>Transpalette peseur <br>KERN VHB</strong></a></h3><!-- End .banner-title -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Transpalette peseur')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Transpalette peseur')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .banner-content -->
                         </div><!-- End .banner -->
                     </div><!-- End .col-md-4 -->
@@ -188,7 +195,7 @@ include '../includes/header.php';
                             <div class="banner-content">
                                 <h4 class="banner-subtitle"><a href="#">MADE IN GERMANY</a></h4><!-- End .banner-subtitle -->
                                 <h3 class="banner-title"><a href="#"><strong>Pèse-bébé numérique <br> servocare</strong></a></h3><!-- End .banner-title -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Pèse-bébé numérique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Pèse-bébé numérique')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .banner-content -->
                         </div><!-- End .banner -->
                     </div><!-- End .col-md-4 -->
@@ -202,7 +209,7 @@ include '../includes/header.php';
                             <div class="banner-content">
                                 <h4 class="banner-subtitle"><a href="#">MADE IN GERMANY</a></h4><!-- End .banner-subtitle -->
                                 <h3 class="banner-title"><a href="#"><strong>Centrifugeuse</strong> </a></h3><!-- End .banner-title -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Centrifugeuse')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Centrifugeuse')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .banner-content -->
                         </div><!-- End .banner -->
                     </div><!-- End .col-lg-4 -->
@@ -218,7 +225,7 @@ include '../includes/header.php';
                     </div><!-- End .heading-left -->
 
                    <div class="heading-right">
-                        <ul class="nav nav-pills nav-border-anim justify-content-center" role="tablist">
+                        <ul class="nav nav-pills nav-border-anim justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link active" id="new-all-link" data-toggle="tab" href="#new-all-tab" role="tab" aria-controls="new-all-tab" aria-selected="true">Tout</a>
                             </li>
@@ -271,7 +278,8 @@ include '../includes/header.php';
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html" >
-                                        <img  src="../assets/images/demos/demo-4/products/tout/7.png" alt="Product image" class="product-image">
+                                        <img  src="../assets/images/demos/demo-4/products/tout/7.png" alt="Produit" class="product-image">
+
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -297,14 +305,14 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 4 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Apareil d’hermatologie')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Apareil d’hermatologie')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
 
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/18.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/18.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -330,7 +338,7 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 6 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('combinaison')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('combinaison')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
 
@@ -338,7 +346,7 @@ include '../includes/header.php';
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/17.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/17.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -364,7 +372,7 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 4 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('multimetre')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('multimetre')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
 
@@ -373,7 +381,7 @@ include '../includes/header.php';
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/16.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/16.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -399,7 +407,7 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 10 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Camera de surveillance')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Camera de surveillance')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -408,7 +416,7 @@ include '../includes/header.php';
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/15.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/15.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -434,7 +442,7 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 5 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Imprimante')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Imprimante')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
 
@@ -442,7 +450,7 @@ include '../includes/header.php';
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/14.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/14.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -458,7 +466,7 @@ include '../includes/header.php';
                                     <div class="product-cat">
                                         <a href="#">Informatique</a>
                                     </div><!-- End .product-cat -->
-                                    <h3 class="product-title"><a href="product.html"></a>Banderole</h3><!-- End .product-title -->
+                                    <h3 class="product-title"><a href="product.html">Banderole</a></h3><!-- End .product-title -->
                                     <div class="product-price">
                                         
                                     </div><!-- End .product-price -->
@@ -468,7 +476,7 @@ include '../includes/header.php';
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 4 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit(' Banderole')">Banderole<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit(' Banderole')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
                         </div><!-- End .owl-carousel -->
@@ -500,7 +508,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/13.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/13.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -527,14 +535,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit(' Pompe')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit(' Pompe')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -560,7 +568,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Apareil biochimie')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Apareil biochimie')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .prod uct -->
 
@@ -568,7 +576,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-new">New</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/4.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/4.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -595,7 +603,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
 
-                                <a href="#" class="banner-link" onclick="acheterProduit('Thermométre numérique à stylet portable WT-1B')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Thermométre numérique à stylet portable WT-1B')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -604,7 +612,7 @@ include '../includes/header.php';
                                 <span class="product-label label-circle label-top">Top</span>
                                 <span class="product-label label-circle label-sale">Sale</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/10.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/10.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -631,7 +639,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 10 vus )</span>
                                 </div><!-- End .rating-container -->
 
-                                <a href="#" class="banner-link" onclick="acheterProduit('Chaine elisa & kit elisa')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Chaine elisa & kit elisa')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -639,7 +647,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -665,7 +673,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 5 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Congélateur plafond à ultra basse température')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Congélateur plafond à ultra basse température')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -673,7 +681,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/3.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/3.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -699,7 +707,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Détecteur de fuite de gaz')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Détecteur de fuite de gaz')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
                     </div><!-- End .owl-carousel -->
@@ -733,7 +741,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/22.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/22.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -760,14 +768,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Tensionmètre')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Tensionmètre')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -793,7 +801,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Apareil biochimie')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Apareil biochimie')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -801,7 +809,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-new">New</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/20.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/20.jpg" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -828,7 +836,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
 
-                                <a href="#" class="banner-link" onclick="acheterProduit('Gel hydroalcoolique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Gel hydroalcoolique')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -837,7 +845,7 @@ include '../includes/header.php';
                                 <span class="product-label label-circle label-top">Top</span>
                                 <span class="product-label label-circle label-sale">Sale</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/10.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/10.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -864,7 +872,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 10 vus )</span>
                                 </div><!-- End .rating-container -->
 
-                                <a href="#" class="banner-link" onclick="acheterProduit('Chaine elisa & Kit elisa')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Chaine elisa & Kit elisa')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -872,7 +880,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -898,7 +906,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 5 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Congélateur ptofond à ultra basse température')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Congélateur ptofond à ultra basse température')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
 
@@ -906,7 +914,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/21.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/21.jpg" alt="Produit" class="product-image">
                                 </a>
 
                                 <div class="product-action-vertical">
@@ -932,7 +940,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('gel hydroalcoolique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('gel hydroalcoolique')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
                     </div><!-- End .owl-carousel -->
@@ -964,7 +972,7 @@ include '../includes/header.php';
                         <figure class="product-media">
                             <span class="product-label label-circle label-top">Top</span>
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/2.png" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/2.png" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -991,14 +999,14 @@ include '../includes/header.php';
                                 </div><!-- End .ratings -->
                                 <span class="ratings-text">( 4 vus )</span>
                             </div><!-- End .rating-container -->
-                            <a href="#" class="banner-link" onclick="acheterProduit('Cache nez')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Cache nez')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
 
                     <div class="product product-2">
                         <figure class="product-media">
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/23.png" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/23.png" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -1024,7 +1032,7 @@ include '../includes/header.php';
                                 </div><!-- End .ratings -->
                                 <span class="ratings-text">( 6 vus )</span>
                             </div><!-- End .rating-container -->
-                            <a href="#" class="banner-link" onclick="acheterProduit('Réfractomètre analogique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Réfractomètre analogique')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
 
@@ -1032,7 +1040,7 @@ include '../includes/header.php';
                         <figure class="product-media">
                             <span class="product-label label-circle label-new">New</span>
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/01.jpg" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/01.jpg" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -1059,7 +1067,7 @@ include '../includes/header.php';
                                 <span class="ratings-text">( 4 vus )</span>
                             </div><!-- End .rating-container -->
 
-                            <a href="#" class="banner-link" onclick="acheterProduit('Thermoplastic')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Thermoplastic')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
 
@@ -1068,7 +1076,7 @@ include '../includes/header.php';
                             <span class="product-label label-circle label-top">Top</span>
                             <span class="product-label label-circle label-sale">Sale</span>
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -1095,7 +1103,7 @@ include '../includes/header.php';
                                 <span class="ratings-text">( 10 vus )</span>
                             </div><!-- End .rating-container -->
 
-                            <a href="#" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
 
@@ -1103,7 +1111,7 @@ include '../includes/header.php';
                         <figure class="product-media">
                             <span class="product-label label-circle label-top">Top</span>
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/03.jpg" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/03.jpg" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -1129,7 +1137,7 @@ include '../includes/header.php';
                                 </div><!-- End .ratings -->
                                 <span class="ratings-text">( 5 vus )</span>
                             </div><!-- End .rating-container -->
-                            <a href="#" class="banner-link" onclick="acheterProduit('Thermométre')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Thermométre')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
 
@@ -1137,7 +1145,7 @@ include '../includes/header.php';
                         <figure class="product-media">
                             <span class="product-label label-circle label-top">Top</span>
                             <a href="product.html">
-                                <img src="../assets/images/demos/demo-4/products/tout/6.png" alt="Product image" class="product-image">
+                                <img src="../assets/images/demos/demo-4/products/tout/6.png" alt="Produit" class="product-image">
                             </a>
 
                             <div class="product-action-vertical">
@@ -1163,7 +1171,7 @@ include '../includes/header.php';
                                 </div><!-- End .ratings -->
                                 <span class="ratings-text">( 4 vus )</span>
                             </div><!-- End .rating-container -->
-                            <a href="#" class="banner-link" onclick="acheterProduit('Pèse-palettes KERN UIB')">Acheter<i class="icon-long-arrow-right"></i></a>
+                            <button type="button" class="banner-link" onclick="acheterProduit('Pèse-palettes KERN UIB')">Acheter<i class="icon-long-arrow-right"></i></button>
                             </div><!-- End .product-body -->
                     </div><!-- End .product -->
                 </div><!-- End .owl-carousel -->
@@ -1197,7 +1205,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/13.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/13.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1224,14 +1232,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Pompe')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Pompe')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/00.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/00.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1257,7 +1265,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Equipement de conatruction')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Equipement de conatruction')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1265,7 +1273,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-new">New</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/n3.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/n3.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1292,7 +1300,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('quipement de protection')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('quipement de protection')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1301,7 +1309,7 @@ include '../includes/header.php';
                                 <span class="product-label label-circle label-top">Top</span>
                                 <span class="product-label label-circle label-sale">Sale</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/infra.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/infra.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1328,7 +1336,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 10 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('Instinteur')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Instinteur')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1366,7 +1374,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1393,14 +1401,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Ordimateur portable')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Ordimateur portable')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/ordina.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/ordina.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1426,7 +1434,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('PC MAC')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('PC MAC')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1434,7 +1442,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-new">New</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/15.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/15.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1461,7 +1469,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('Imprimante')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Imprimante')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1470,7 +1478,7 @@ include '../includes/header.php';
                                 <span class="product-label label-circle label-top">Top</span>
                                 <span class="product-label label-circle label-sale">Sale</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/laptop.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/laptop.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1497,7 +1505,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 10 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('Ordinateur de bureaux')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Ordinateur de bureaux')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1505,7 +1513,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/switch-hp-2520-24g-poe-j9299a-1-1024x322.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/switch-hp-2520-24g-poe-j9299a-1-1024x322.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1531,7 +1539,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 5 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('switch')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('switch')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1539,7 +1547,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/reseaux.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/reseaux.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1565,7 +1573,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Cable reseaux')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Cable reseaux')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
                     </div><!-- End .owl-carousel -->
@@ -1599,7 +1607,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1626,14 +1634,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('laptop')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('laptop')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/reseux.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/reseux.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1659,7 +1667,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('dispositif de protection')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('dispositif de protection')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1667,7 +1675,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-new">New</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/switch-hp-2520-24g-poe-j9299a-1-1024x322.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/switch-hp-2520-24g-poe-j9299a-1-1024x322.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1694,7 +1702,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('switch')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('switch')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1703,7 +1711,7 @@ include '../includes/header.php';
                                 <span class="product-label label-circle label-top">Top</span>
                                 <span class="product-label label-circle label-sale">Sale</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/16.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/16.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1730,7 +1738,7 @@ include '../includes/header.php';
                                     <span class="ratings-text">( 10 vus )</span>
                                 </div><!-- End .rating-container -->
     
-                                <a href="#" class="banner-link" onclick="acheterProduit('Camera de surveillance')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Camera de surveillance')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1768,7 +1776,7 @@ include '../includes/header.php';
                             <figure class="product-media">
                                 <span class="product-label label-circle label-top">Top</span>
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/reseux.png" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/reseux.png" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1795,14 +1803,14 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 4 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Dispositif de mesure ')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Dispositif de mesure ')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
                         <div class="product product-2">
                             <figure class="product-media">
                                 <a href="product.html">
-                                    <img src="../assets/images/demos/demo-4/products/tout/reseaux.jpg" alt="Product image" class="product-image">
+                                    <img src="../assets/images/demos/demo-4/products/tout/reseaux.jpg" alt="Produit" class="product-image">
                                 </a>
     
                                 <div class="product-action-vertical">
@@ -1828,7 +1836,7 @@ include '../includes/header.php';
                                     </div><!-- End .ratings -->
                                     <span class="ratings-text">( 6 vus )</span>
                                 </div><!-- End .rating-container -->
-                                <a href="#" class="banner-link" onclick="acheterProduit('Cables reseaux')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                <button type="button" class="banner-link" onclick="acheterProduit('Cables reseaux')">Acheter<i class="icon-long-arrow-right"></i></button>
                                 </div><!-- End .product-body -->
                         </div><!-- End .product -->
     
@@ -1890,175 +1898,8 @@ function clearCart() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-                    </div><!-- End .owl-carousel -->
-                    </div><!-- .End .tab-pane -->
-                </div><!-- End .tab-content -->
-            </div><!-- End .container -->
-
-            <div class="mb-6"></div><!-- End .mb-6 -->
-
-            <div class="container">
-                <div class="cta cta-border mb-5" style="background-image: url(../assets/images/demos/demo-4/bg-1.jpg);">
-                    <img src="../assets/images/demos/demo-4/camera.png" alt="camera" class="cta-img">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div class="cta-content">
-                                <div class="cta-text text-right text-white">
-                                    <p>Besoin d'autre produits<br> qui n'apparaient pas dans le site<strong></strong></p>
-                                </div><!-- End .cta-text -->
-                                <a href="#" class="btn btn-primary btn-round"><span>Ecrivez-nous</span><i class="icon-long-arrow-right"></i></a>
-                            </div><!-- End .cta-content -->
-                        </div><!-- End .col-md-12 -->
-                    </div><!-- End .row -->
-                </div><!-- End .cta -->
-            </div><!-- End .container -->
-
-            <div class="container">
-                <div class="heading text-center mb-3">
-                    <h2 class="title">Healthcare</h2><!-- End .title -->
-                    <p class="title-desc">Produits de qualités en Promotions</p><!-- End .title-desc -->
-                </div><!-- End .heading -->
-
-                <div class="row">
-                    <div class="col-lg-6 deal-col">
-                        <div class="deal" style="background-image: url('../assets/images/demos/demo-4/deal/blood-collection-1949542_960_720.jpg');">
-                            <div class="deal-top">
-                                <h2>Trousse de prelèvement</h2>
-                                <h4>Quantité limite. </h4>
-                                <!-- <h4>Promotion</h4> -->
-                            </div><!-- End .deal-top -->
-
-                            <div class="deal-content">
-                                <!-- End .product-title -->
-
-                               
-
-                                <a href="product.html" class="btn btn-link" style="background-color: #2F83C2!important;color: white!important;border-radius: 10%;"><span >Acheter</span><i class="icon-long-arrow-right"></i></a>
-                            </div><!-- End .deal-content -->
-
-                
-                        </div><!-- End .deal -->
-                    </div><!-- End .col-lg-6 -->
-
-                    <div class="col-lg-6 deal-col">
-                        <div class="deal" style="background-image: url('../assets/images/demos/demo-4/deal/blood-pressure-monitor-1952924_1280.jpg');">
-                            <div class="deal-top">
-                                <h2>Cardiograme.</h2>
-                                <h4>Quantité limite.</h4>
-                                <!-- <h4>Promotion</h4> -->
-                            </div><!-- End .deal-top -->
-
-                            <div class="deal-content">
-
-
-                                <div class="product-price">
-
-                                </div><!-- End .product-price -->
-
-                                <a href="login.html" class="btn btn-link" style="background-color: #2F83C2!important;color: white!important;border-radius: 10%;"><span>Acheter</span><i class="icon-long-arrow-right"></i></a>
-                            </div><!-- End .deal-content -->
-
-                        </div><!-- End .deal -->
-                    </div><!-- End .col-lg-6 -->
-                </div><!-- End .row -->
-
-                <div class="more-container text-center mt-1 mb-5">
-                    <a href="tout.html" class="btn btn-outline-dark-2 btn-round btn-more"><span>En savoir plus</span><i class="icon-long-arrow-right"></i></a>
-                </div><!-- End .more-container -->
-            </div><!-- End .container -->
-
-            <div class="container">
-                <hr class="mb-0">
-                <div class="owl-carousel mt-5 mb-5 owl-simple" data-toggle="owl" 
-                    data-owl-options='{
-                        "nav": false, 
-                        "dots": false,
-                        "margin": 30,
-                        "loop": false,
-                        "responsive": {
-                            "0": {
-                                "items":2
-                            },
-                            "420": {
-                                "items":3
-                            },
-                            "600": {
-                                "items":4
-                            },
-                            "900": {
-                                "items":5
-                            },
-                            "1024": {
-                                "items":6
-                            }
-                        }
-                    }'>
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/01.png" alt="Brand Name">
-                    </a>
-
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/02.png" alt="Brand Name">
-                    </a>
-
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/03.png" alt="Brand Name">
-                    </a>
-
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/04.png" alt="Brand Name">
-                    </a>
-
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/05.png" alt="Brand Name">
-                    </a>
-
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/06.png" alt="Brand Name">
-                    </a>
-                    <a href="#" class="brand">
-                        <img src="../assets/images/brands/07.png" alt="Brand Name">
-                    </a>
-                </div><!-- End .owl-carousel -->
-            </div><!-- End .container -->
-
-            <div class="bg-light pt-5 pb-6">
-                <div class="container trending-products">
-                    <div class="heading heading-flex mb-3">
-                        <div class="heading-left">
-                            <h2 class="title">Healthcare</h2><!-- End .title -->
-                        </div><!-- End .heading-left -->
-
-                       <div class="heading-right">
-                            <ul class="nav nav-pills nav-border-anim justify-content-center" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="trending-top-link" data-toggle="tab" href="#trending-top-tab" role="tab" aria-controls="trending-top-tab" aria-selected="true">securité</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="trending-best-link" data-toggle="tab" href="#trending-best-tab" role="tab" aria-controls="trending-best-tab" aria-selected="false">laboratoire</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="trending-sale-link" data-toggle="tab" href="#trending-sale-tab" role="tab" aria-controls="trending-sale-tab" aria-selected="false">santé</a>
-                                </li>
-                            </ul>
-                       </div><!-- End .heading-right -->
-                    </div><!-- End .heading -->
-
+```
+```
                     <div class="row">
                         <div class="col-xl-5col d-none d-xl-block">
                             <div class="banner">
@@ -2098,7 +1939,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/2.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/2.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2126,7 +1967,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                                                 
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Cache nez')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Cache nez')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 <br>
                                                 <br>
                                                 <br>
@@ -2137,7 +1978,7 @@ function clearCart() {
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/21.jpg" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/21.jpg" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2163,7 +2004,7 @@ function clearCart() {
                                                     </div><!-- End .ratings -->
                                                     <span class="ratings-text">( 6 vus )</span>
                                                 </div><!-- End .rating-container -->
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2171,7 +2012,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/01.jpg" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/01.jpg" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2198,7 +2039,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Thermoplastic')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Thermoplastic')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2207,7 +2048,7 @@ function clearCart() {
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <span class="product-label label-circle label-sale">Sale</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2234,7 +2075,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 10 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2242,7 +2083,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/20.jpg" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/20.jpg" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2268,7 +2109,7 @@ function clearCart() {
                                                     </div><!-- End .ratings -->
                                                     <span class="ratings-text">( 5 vus )</span>
                                                 </div><!-- End .rating-container -->
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2306,7 +2147,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/8.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2334,7 +2175,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                                                 
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Apariel biochimie')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Apariel biochimie')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 <br>
                                                 <br>
                                                 <br>
@@ -2345,7 +2186,7 @@ function clearCart() {
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/12.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2371,7 +2212,7 @@ function clearCart() {
                                                     </div><!-- End .ratings -->
                                                     <span class="ratings-text">( 6 vus )</span>
                                                 </div><!-- End .rating-container -->
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Congélateur profond')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Congélateur profond')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2379,7 +2220,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/7.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/7.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2406,7 +2247,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Apareil d’ hermatologie')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Apareil d’ hermatologie')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2415,7 +2256,7 @@ function clearCart() {
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <span class="product-label label-circle label-sale">Sale</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/5.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/5.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2442,7 +2283,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 10 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Incubateur à convection Forcée')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Incubateur à convection Forcée')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2450,7 +2291,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/nn1.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/nn1.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2476,7 +2317,7 @@ function clearCart() {
                                                     </div><!-- End .ratings -->
                                                     <span class="ratings-text">( 5 vus )</span>
                                                 </div><!-- End .rating-container -->
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Gel hydro alcoolique')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2512,7 +2353,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/03.jpg" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/03.jpg" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2540,7 +2381,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                                                 
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Thermométre')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Thermométre')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 <br>
                                                 <br>
                                                 <br>
@@ -2551,7 +2392,7 @@ function clearCart() {
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/22.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/22.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2577,7 +2418,7 @@ function clearCart() {
                                                     </div><!-- End .ratings -->
                                                     <span class="ratings-text">( 6 vus )</span>
                                                 </div><!-- End .rating-container -->
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Tensionmètre')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Tensionmètre')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2585,7 +2426,7 @@ function clearCart() {
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/02.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2612,7 +2453,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 4 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Test de grossesse')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
                     
@@ -2621,7 +2462,7 @@ function clearCart() {
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <span class="product-label label-circle label-sale">Sale</span>
                                                 <a href="product.html">
-                                                    <img src="../assets/images/demos/demo-4/products/tout/Capture d’écran 2024-06-21 112035.png" alt="Product image" class="product-image">
+                                                    <img src="../assets/images/demos/demo-4/products/tout/Capture d’écran 2024-06-21 112035.png" alt="Produit" class="product-image">
                                                 </a>
                     
                                                 <div class="product-action-vertical">
@@ -2648,7 +2489,7 @@ function clearCart() {
                                                     <span class="ratings-text">( 10 vus )</span>
                                                 </div><!-- End .rating-container -->
                     
-                                                <a href="#" class="banner-link" onclick="acheterProduit('Balance scolaire')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                                <button type="button" class="banner-link" onclick="acheterProduit('Balance scolaire')">Acheter<i class="icon-long-arrow-right"></i></button>
                                                 </div><!-- End .product-body -->
                                         </div><!-- End .product -->
 
@@ -2683,7 +2524,7 @@ function clearCart() {
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n1.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n1.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2710,7 +2551,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 4 vus)</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Réfractomètre analogique')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Réfractomètre analogique')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                     <div class="product-nav product-nav-dots">
 
@@ -2724,7 +2565,7 @@ function clearCart() {
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n11.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n11.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2751,7 +2592,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 2 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Étuve de laboratoire isotherme OFA')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Étuve de laboratoire isotherme OFA')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -2762,8 +2603,8 @@ function clearCart() {
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n3.png" alt="Product image" class="product-image">
-                                        <img src="../assets/images/demos/demo-4/products/product-12-2.jpg" alt="Product image" class="product-image-hover">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n3.png" alt="Produit" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/product-12-2.jpg" alt="Produit" class="product-image-hover">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2790,7 +2631,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 0 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Equipement de protection')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Equipement de protection')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                     <div class="product-nav product-nav-dots">
                                         <a href="#" class="active" style="background: #e2e2e2;"><span class="sr-only">Color name</span></a>
@@ -2805,7 +2646,7 @@ function clearCart() {
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n4.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n4.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2832,7 +2673,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 11 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Réfractomètre ')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Réfractomètre ')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -2842,7 +2683,7 @@ function clearCart() {
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n5.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n5.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2869,7 +2710,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 11 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Réfrigérateur de banque de sang')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Réfrigérateur de banque de sang')">Acheter<i class="icon-long-arrow-right"></i></button>
 
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -2879,7 +2720,7 @@ function clearCart() {
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n10.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n10.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2906,7 +2747,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 24 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('POSTE DE MICROBIOLOGIE')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('POSTE DE MICROBIOLOGIE')">Acheter<i class="icon-long-arrow-right"></i></button>
                                     <div class="product-nav product-nav-dots">
                      
                                         <a href="#" style="background: #333333;"><span class="sr-only">couleur</span></a>
@@ -2921,7 +2762,7 @@ function clearCart() {
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/ordi.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2948,7 +2789,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 4 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Ordinateur portable')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Ordinateur portable')">Acheter<i class="icon-long-arrow-right"></i></button>
                                     <div class="product-nav product-nav-dots">
 
                                     </div><!-- End .product-nav -->
@@ -2960,7 +2801,7 @@ function clearCart() {
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="../assets/images/demos/demo-4/products/tout/n9.png" alt="Product image" class="product-image">
+                                        <img src="../assets/images/demos/demo-4/products/tout/n9.png" alt="Produit" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2987,7 +2828,7 @@ function clearCart() {
                                         </div><!-- End .ratings -->
                                         <span class="ratings-text">( 2 vus )</span>
                                     </div><!-- End .rating-container -->
-                                    <a href="#" class="banner-link" onclick="acheterProduit('Crochet peseur KERN HFD')">Acheter<i class="icon-long-arrow-right"></i></a>
+                                    <button type="button" class="banner-link" onclick="acheterProduit('Crochet peseur KERN HFD')">Acheter<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .product-body -->
                             </div><!-- End .product -->
                         </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
@@ -3173,12 +3014,12 @@ function clearCart() {
                 <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
             </form>
 
-            <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+            <ul class="nav nav-pills-mobile nav-border-anim">
                 <li class="nav-item">
-                    <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+                    <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" >Menu</a>
                 <!-- </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+                    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" >Categories</a>
                 </li> -->
             </ul>
 
@@ -3251,12 +3092,12 @@ function clearCart() {
                 <div class="form-box">
                     <div class="form-tab">
                         <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                        <ul class="nav nav-pills nav-fill" role="tablist">
+                        <ul class="nav nav-pills nav-fill">
                             <li class="nav-item">
-                                <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
+                                <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" >Se connecter</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">S'inscrire</a>
+                                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" >S'inscrire</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="tab-content-5">

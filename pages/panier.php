@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Panier';
 $page_description = 'Votre panier GM&H.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
 
 <!-- CSS supplémentaires pour cette page -->
@@ -203,7 +203,7 @@ include '../includes/header.php';
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
 
-        <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+        <ul class="nav nav-pills-mobile nav-border-anim">
             <li class="nav-item">
                 <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
             <!-- </li>
@@ -280,7 +280,7 @@ include '../includes/header.php';
             <div class="form-box">
                 <div class="form-tab">
                     <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
                             <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
                         </li>

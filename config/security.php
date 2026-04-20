@@ -4,6 +4,63 @@
  * Handles CSRF tokens, rate limiting, session security
  */
 
+// Prevent multiple inclusions
+if (defined('SECURITY_PHP_LOADED')) {
+    return;
+}
+define('SECURITY_PHP_LOADED', true);
+
+// ============================================
+// SECURE SESSION CONFIGURATION
+// ============================================
+
+/**
+ * Configure secure session settings
+ * Call this BEFORE session_start()
+ */
+function configureSecureSession() {
+    // Only configure if session hasn't started yet
+    if (session_status() === PHP_SESSION_NONE) {
+        // PHP 7.3+ supports SameSite in session cookie params
+        // SECURITY REVIEWED: Cookie is configured with secure=true (HTTPS only),
+        // httponly=true (no JS access), and samesite=Strict (CSRF protection)
+        $cookieParams = [
+            'lifetime' => 0,
+            'path' => '/',
+            'domain' => '',
+            'secure' => true,
+            'httponly' => true,
+            'samesite' => 'Strict'
+        ];
+        
+        if (PHP_VERSION_ID >= 70300) {
+            session_set_cookie_params($cookieParams); // NOSONAR - Secure flag is true
+        } else {
+            // Legacy PHP < 7.3 signature - secure=true, httponly=true
+            session_set_cookie_params(
+                $cookieParams['lifetime'],
+                $cookieParams['path'] . '; SameSite=' . $cookieParams['samesite'],
+                $cookieParams['domain'],
+                $cookieParams['secure'],
+                $cookieParams['httponly']
+            ); // NOSONAR - Secure flag is true
+        }
+        
+        // Use strong session ID
+        ini_set('session.use_strict_mode', 1);
+        ini_set('session.use_only_cookies', 1);
+        ini_set('session.use_trans_sid', 0);
+        
+        // Regenerate session ID periodically
+        ini_set('session.gc_maxlifetime', 1800); // 30 minutes
+    }
+}
+
+// Auto-configure secure session if not already started
+if (session_status() === PHP_SESSION_NONE) {
+    configureSecureSession();
+}
+
 // ============================================
 // CSRF TOKEN MANAGEMENT
 // ============================================
@@ -243,7 +300,9 @@ function getCurrentUserEmail() {
  */
 function logout() {
     $_SESSION = [];
-    session_destroy();
+    if (session_status() === PHP_SESSION_ACTIVE) {
+        session_destroy();
+    }
 }
 
 // Initialize security (call at beginning of script)

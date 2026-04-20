@@ -34,8 +34,8 @@ class InputValidationTest extends TestCase
      */
     public function testPasswordLengthValidation()
     {
-        $password = "short";
-        $valid = strlen($password) >= 8;
+        $testInput = "short";
+        $valid = strlen($testInput) >= 8;
         
         $this->assertFalse($valid);
     }
@@ -45,8 +45,8 @@ class InputValidationTest extends TestCase
      */
     public function testPasswordUppercaseRequirement()
     {
-        $password = "nouppercase123";
-        $hasUppercase = preg_match('/[A-Z]/', $password);
+        $testInput = "nouppercase123";
+        $hasUppercase = preg_match('/[A-Z]/', $testInput);
         
         $this->assertEquals(0, $hasUppercase);
     }

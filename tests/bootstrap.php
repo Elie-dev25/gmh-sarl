@@ -12,6 +12,13 @@ if (!defined('PHPUNIT_RUNNING')) {
     define('PHPUNIT_RUNNING', true);
 }
 
+// Set mock environment variables for testing (prevents db.php from failing)
+putenv('DB_HOST=localhost');
+putenv('DB_PORT=3306');
+putenv('DB_USERNAME=test_user');
+putenv('DB_PASSWORD=test_pass');
+putenv('DB_NAME=test_db');
+
 // Include security functions for testing
 require_once BASE_PATH . '/config/security.php';
 

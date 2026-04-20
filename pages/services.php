@@ -2,7 +2,7 @@
 $page_title = 'Nos Services';
 $page_description = 'Découvrez les services proposés par GM&H : informatique, healthcare, sécurité réseau, téléphonie IP et plus encore.';
 $page_css = 'pages.css';
-include __DIR__ . '/../includes/header.php';
+include_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Header avec Bannière -->
@@ -313,4 +313,4 @@ include __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../includes/footer.php'; ?>

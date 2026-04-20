@@ -2,7 +2,7 @@
 $page_title = 'À Propos';
 $page_description = 'Découvrez GM&H, votre partenaire de confiance pour les solutions informatiques et healthcare en Afrique depuis 2015.';
 $page_css = 'pages.css';
-include __DIR__ . '/../includes/header.php';
+include_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Header avec Bannière -->
@@ -226,4 +226,4 @@ include __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../includes/footer.php'; ?>

@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Catalogue - Page 3';
 $page_description = 'Découvrez notre catalogue complet de produits GM&H.';
-include '../includes/header.php';
+include_once '../includes/header.php';
 ?>
 
 <!-- CSS supplémentaires pour cette page -->
@@ -41,7 +41,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat30.png" alt="image desc">
+                                        <img src="../image/cat30.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -82,7 +82,7 @@ include '../includes/header.php';
                                         <li>Les Pipettes Mécaniques à volume fixe; à volume variable; à multicanaux. </li>
                                         <li>Le Pipetage à la Bouche (Poire à pipeter).</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -92,7 +92,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media ">
                                     <a href="single.html">
-                                        <img src="../image/cat29.png" alt="image desc">
+                                        <img src="../image/cat29.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -124,7 +124,7 @@ include '../includes/header.php';
                                         <li>Port d’accès pour Sonde Externe: 1x Disponible</li>
                                         
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -135,7 +135,7 @@ include '../includes/header.php';
                                 <figure class="entry-media">
                                     <div class="owl-carousel owl-simple owl-light " data-toggle="owl">
                                         <a href="single.html">
-                                            <img src="../image/cat31.png" alt="image desc">
+                                            <img src="../image/cat31.png" alt="Description du produit">
                                         </a>
                                     </div><!-- End .owl-carousel -->
                                 </figure><!-- End .entry-media -->
@@ -172,7 +172,7 @@ include '../includes/header.php';
                                         <li>Purificateur d’eau </li>
                                         <li>Distilllateur d‘eau</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -182,7 +182,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat32.png" alt="image desc">
+                                        <img src="../image/cat32.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -210,7 +210,7 @@ include '../includes/header.php';
                                         <p> <span style="font-weight: bold;">Les Réfrigérants:</span><br>Dispositif à double enveloppe qui coiffe un ballon dans lequel un mélange est porté à ébullition. </p>
                                         
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -220,7 +220,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat33.png" alt="image desc">
+                                        <img src="../image/cat33.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -256,7 +256,7 @@ include '../includes/header.php';
                                         <li>Imagerie Médicale </li>
                                         <li>Les Produits Chimiques de laboratoire</li>
                                        </ul>
-                                       <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                       <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                     </div><!-- End .entry-content -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
@@ -266,7 +266,7 @@ include '../includes/header.php';
                             <article class="entry entry-grid text-center">
                                 <figure class="entry-media">
                                     <a href="single.html">
-                                        <img src="../image/cat34.png" alt="image desc">
+                                        <img src="../image/cat34.png" alt="Description du produit">
                                     </a>
                                 </figure><!-- End .entry-media -->
 
@@ -296,7 +296,7 @@ include '../includes/header.php';
                                          <li>Ecographe</li>
                                          <li>Holter Tensiomètre</li>
                                         </ul>
-                                        <a href="#" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></a>
+                                        <button type="button" class="banner-link" style="color: #009FDA!important;">En savoir plus<i class="icon-long-arrow-right"></i></button>
                                      </div><!-- End .entry-content -->
                                     </div><!-- End .entry-body -->
                                     </article><!-- End .entry -->
@@ -432,12 +432,13 @@ include '../includes/header.php';
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
 
-        <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+        <ul class="nav nav-pills-mobile nav-border-anim">
             <li class="nav-item">
                 <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+
             <!-- </li>
             <li class="nav-item">
-                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+                <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
             </li> -->
         </ul>
 
@@ -508,13 +509,13 @@ include '../includes/header.php';
             <div class="form-box">
                 <div class="form-tab">
                     <!-- Vos onglets de formulaire de connexion et d'inscription -->
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill">
+
                         <li class="nav-item">
                             <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Se connecter</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">S'inscrire</a>
-                        </li>
                     </ul>
                     <div class="tab-content" id="tab-content-5">
                         <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">

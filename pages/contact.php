@@ -2,7 +2,7 @@
 $page_title = 'Contact';
 $page_description = 'Contactez GM&H pour vos besoins en solutions informatiques et healthcare. Notre équipe est à votre disposition.';
 $page_css = 'pages.css';
-include __DIR__ . '/../includes/header.php';
+include_once __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Page Header -->
@@ -128,6 +128,7 @@ include __DIR__ . '/../includes/header.php';
 <!-- Map Section -->
 <section class="map-section">
     <iframe 
+        title="Localisation de GM&H à Abidjan"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254517.28594407027!2d-4.1079839!3d5.3599517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sfr!4v1680000000000!5m2!1sfr!2sfr" 
         allowfullscreen="" 
         loading="lazy" 
@@ -135,4 +136,4 @@ include __DIR__ . '/../includes/header.php';
     </iframe>
 </section>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include_once __DIR__ . '/../includes/footer.php'; ?>

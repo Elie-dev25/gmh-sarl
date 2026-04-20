@@ -1,0 +1,12 @@
+
+
+Code Coverage Report:     
+  2026-04-20 16:31:02     
+                          
+ Summary:                 
+  Classes:  0.00% (0/1)   
+  Methods: 50.00% (2/4)   
+  Lines:   19.79% (96/485)
+
+Env
+  Methods:  50.00% ( 2/ 4)   Lines:  93.94% ( 31/ 33)

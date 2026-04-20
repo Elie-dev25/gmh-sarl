@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Include security functions globally
-include_once(__DIR__ . '/../config/security.php');
+include_once __DIR__ . '/../config/security.php';
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $is_home = ($current_page === 'index');
@@ -33,13 +33,11 @@ $pages_path = (strpos($script_path, '/pages') !== false) ? '' : 'pages/';
     <link rel="shortcut icon" href="<?php echo $base_path; ?>assets/images/icons/gmh.png">
     <meta name="theme-color" content="#2F83C2">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fonts - Using local fonts for security (no external CDN dependency) -->
+    <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/fonts-local.css">
     
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-aqyivRp/GZVbPx8BHkXi0KyPon/OPT6lKL1o96sPawqxJCyCpYpaHfPMY3Mbb3MsuVnHpFj8PBiI6+5l0UnxqA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/bootstrap.min.css">

@@ -4,10 +4,17 @@
  * Add this to your .htaccess or web server configuration
  */
 
+// Skip during PHPUnit tests or CLI
+if (defined('PHPUNIT_RUNNING') || php_sapi_name() === 'cli') {
+    return;
+}
+
 // Force HTTPS redirect (add to index.php or use .htaccess)
 if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
     // Redirect to HTTPS
-    $url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    $url = 'https://' . $host . $uri;
     header("Location: $url", true, 301);
     exit();
 }

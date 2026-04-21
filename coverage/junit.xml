@@ -1,26 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="18" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.087254">
-    <testsuite name="Security" tests="18" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.087254">
-      <testsuite name="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" tests="18" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.087254">
-        <testcase name="testGenerateCSRFToken" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="20" assertions="3" time="0.041468"/>
-        <testcase name="testVerifyCSRFTokenValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="32" assertions="1" time="0.002936"/>
-        <testcase name="testVerifyCSRFTokenInvalid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="43" assertions="1" time="0.002565"/>
-        <testcase name="testVerifyCSRFTokenExpired" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="54" assertions="1" time="0.000993"/>
-        <testcase name="testRateLimitingNotTriggered" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="67" assertions="1" time="0.001076"/>
-        <testcase name="testRateLimitingTriggered" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="77" assertions="1" time="0.001317"/>
-        <testcase name="testRecordFailedLogin" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="90" assertions="2" time="0.001949"/>
-        <testcase name="testSessionValidationNoUserId" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="101" assertions="1" time="0.001323"/>
-        <testcase name="testSessionValidationValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="111" assertions="1" time="0.001327"/>
-        <testcase name="testSessionValidationExpired" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="125" assertions="1" time="0.005405"/>
-        <testcase name="testValidEmailValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="138" assertions="1" time="0.005435"/>
-        <testcase name="testValidEmailInvalid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="148" assertions="1" time="0.001719"/>
-        <testcase name="testPasswordStrengthWeak" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="158" assertions="2" time="0.003266"/>
-        <testcase name="testPasswordStrengthStrong" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="169" assertions="2" time="0.001516"/>
-        <testcase name="testSanitizeOutput" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="180" assertions="2" time="0.010158"/>
-        <testcase name="testGetCurrentUserId" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="192" assertions="1" time="0.001682"/>
-        <testcase name="testGetCurrentUserEmail" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="204" assertions="1" time="0.001437"/>
-        <testcase name="testLogout" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="216" assertions="1" time="0.001683"/>
+  <testsuite name="" tests="65" assertions="94" errors="0" warnings="0" failures="0" skipped="0" time="0.183032">
+    <testsuite name="Unit" tests="45" assertions="68" errors="0" warnings="0" failures="0" skipped="0" time="0.153672">
+      <testsuite name="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" tests="9" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.088980">
+        <testcase name="testLoadFromFile" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="44" assertions="4" time="0.015332"/>
+        <testcase name="testLoadNonExistentFile" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="54" assertions="1" time="0.004230"/>
+        <testcase name="testGetWithDefault" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="62" assertions="1" time="0.005605"/>
+        <testcase name="testHasKey" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="69" assertions="2" time="0.012064"/>
+        <testcase name="testCommentsAreIgnored" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="77" assertions="1" time="0.010445"/>
+        <testcase name="testQuotesAreStripped" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="84" assertions="2" time="0.014553"/>
+        <testcase name="testRequireExisting" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="95" assertions="1" time="0.008106"/>
+        <testcase name="testRequireMissingThrows" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="103" assertions="1" time="0.008804"/>
+        <testcase name="testLoadOnlyOnce" class="EnvTest" classname="EnvTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\EnvTest.php" line="111" assertions="1" time="0.009840"/>
+      </testsuite>
+      <testsuite name="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.013412">
+        <testcase name="testEmailSanitization" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="13" assertions="1" time="0.001608"/>
+        <testcase name="testEmailValidationSQLInjection" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="24" assertions="1" time="0.003033"/>
+        <testcase name="testPasswordLengthValidation" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="35" assertions="1" time="0.001927"/>
+        <testcase name="testPasswordUppercaseRequirement" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="46" assertions="1" time="0.001505"/>
+        <testcase name="testNameSanitization" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="57" assertions="1" time="0.002296"/>
+        <testcase name="testPhoneNumberFormat" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="68" assertions="1" time="0.001595"/>
+        <testcase name="testPhoneNumberInvalid" class="InputValidationTest" classname="InputValidationTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\InputValidationTest.php" line="79" assertions="1" time="0.001447"/>
+      </testsuite>
+      <testsuite name="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" tests="29" assertions="47" errors="0" warnings="0" failures="0" skipped="0" time="0.051281">
+        <testcase name="testIsAdminFalse" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="19" assertions="1" time="0.002090"/>
+        <testcase name="testIsAdminTrue" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="27" assertions="1" time="0.002413"/>
+        <testcase name="testGetCurrentUserIdNull" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="36" assertions="1" time="0.002626"/>
+        <testcase name="testGetCurrentUserEmailNull" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="44" assertions="1" time="0.001061"/>
+        <testcase name="testPasswordMissingUppercase" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="52" assertions="2" time="0.002159"/>
+        <testcase name="testPasswordMissingLowercase" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="62" assertions="2" time="0.002196"/>
+        <testcase name="testPasswordMissingNumber" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="72" assertions="2" time="0.001408"/>
+        <testcase name="testPasswordTooShort" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="82" assertions="2" time="0.001827"/>
+        <testcase name="testValidEmailFormats" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="92" assertions="3" time="0.001389"/>
+        <testcase name="testInvalidEmailFormats" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="102" assertions="4" time="0.001509"/>
+        <testcase name="testSanitizeOutputVarious" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="113" assertions="3" time="0.001061"/>
+        <testcase name="testCSRFTokenConsistency" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="123" assertions="1" time="0.000928"/>
+        <testcase name="testVerifyCSRFTokenEmpty" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="134" assertions="1" time="0.001639"/>
+        <testcase name="testVerifyCSRFTokenNoSessionToken" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="143" assertions="1" time="0.002467"/>
+        <testcase name="testRateLimitingResetAfterTimeout" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="151" assertions="2" time="0.000942"/>
+        <testcase name="testMultipleFailedLogins" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="165" assertions="1" time="0.003696"/>
+        <testcase name="testSessionValidationMissingLoginTime" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="177" assertions="1" time="0.000972"/>
+        <testcase name="testConfigureSecureSessionExists" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="188" assertions="1" time="0.000978"/>
+        <testcase name="testConfigureSecureSessionWhenActive" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="196" assertions="1" time="0.001432"/>
+        <testcase name="testSetSecurityHeadersExists" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="207" assertions="1" time="0.001302"/>
+        <testcase name="testRequireLoginExists" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="215" assertions="1" time="0.001287"/>
+        <testcase name="testSessionIPMismatch" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="223" assertions="1" time="0.003793"/>
+        <testcase name="testVerifyCSRFTokenCustomMaxAge" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="237" assertions="2" time="0.001432"/>
+        <testcase name="testRateLimitingDifferentActions" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="253" assertions="3" time="0.001045"/>
+        <testcase name="testPasswordAllRequirements" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="263" assertions="2" time="0.001438"/>
+        <testcase name="testPasswordMultipleErrors" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="273" assertions="2" time="0.004057"/>
+        <testcase name="testSetSecurityHeadersExecutes" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="284" assertions="1" time="0.001786"/>
+        <testcase name="testSessionValidNoIpAddress" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="295" assertions="1" time="0.001291"/>
+        <testcase name="testPasswordOnlyUppercaseAndNumbers" class="SecurityExtendedTest" classname="SecurityExtendedTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Unit\SecurityExtendedTest.php" line="308" assertions="2" time="0.001056"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Security" tests="20" assertions="26" errors="0" warnings="0" failures="0" skipped="0" time="0.029360">
+      <testsuite name="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" tests="18" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.027364">
+        <testcase name="testGenerateCSRFToken" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="20" assertions="3" time="0.001540"/>
+        <testcase name="testVerifyCSRFTokenValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="32" assertions="1" time="0.001840"/>
+        <testcase name="testVerifyCSRFTokenInvalid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="43" assertions="1" time="0.001454"/>
+        <testcase name="testVerifyCSRFTokenExpired" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="54" assertions="1" time="0.004463"/>
+        <testcase name="testRateLimitingNotTriggered" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="67" assertions="1" time="0.000992"/>
+        <testcase name="testRateLimitingTriggered" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="77" assertions="1" time="0.000883"/>
+        <testcase name="testRecordFailedLogin" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="90" assertions="2" time="0.002070"/>
+        <testcase name="testSessionValidationNoUserId" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="101" assertions="1" time="0.000833"/>
+        <testcase name="testSessionValidationValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="111" assertions="1" time="0.000918"/>
+        <testcase name="testSessionValidationExpired" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="125" assertions="1" time="0.001585"/>
+        <testcase name="testValidEmailValid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="138" assertions="1" time="0.001390"/>
+        <testcase name="testValidEmailInvalid" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="148" assertions="1" time="0.001335"/>
+        <testcase name="testPasswordStrengthWeak" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="158" assertions="2" time="0.001400"/>
+        <testcase name="testPasswordStrengthStrong" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="169" assertions="2" time="0.001808"/>
+        <testcase name="testSanitizeOutput" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="180" assertions="2" time="0.001366"/>
+        <testcase name="testGetCurrentUserId" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="192" assertions="1" time="0.001440"/>
+        <testcase name="testGetCurrentUserEmail" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="204" assertions="1" time="0.000943"/>
+        <testcase name="testLogout" class="SecurityTest" classname="SecurityTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\SecurityTest.php" line="216" assertions="1" time="0.001102"/>
+      </testsuite>
+      <testsuite name="ZSessionTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\ZSessionTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.001996">
+        <testcase name="testLogoutDestroysActiveSession" class="ZSessionTest" classname="ZSessionTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\ZSessionTest.php" line="16" assertions="1" time="0.000961"/>
+        <testcase name="testConfigureSecureSessionWhenNotActive" class="ZSessionTest" classname="ZSessionTest" file="C:\Users\elien\sonar-analysis\gmh-sarl\tests\Security\ZSessionTest.php" line="38" assertions="1" time="0.001035"/>
       </testsuite>
     </testsuite>
   </testsuite>

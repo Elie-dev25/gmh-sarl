@@ -2,5 +2,5 @@ projectKey=gmh-sarl
 serverUrl=http://localhost:9000
 serverVersion=26.4.0.121862
 dashboardUrl=http://localhost:9000/dashboard?id=gmh-sarl
-ceTaskId=f1356d2c-ff2c-4d97-9379-3e9c4945f94a
-ceTaskUrl=http://localhost:9000/api/ce/task?id=f1356d2c-ff2c-4d97-9379-3e9c4945f94a
+ceTaskId=8632c0c1-0bab-4e20-85fd-33b280036f30
+ceTaskUrl=http://localhost:9000/api/ce/task?id=8632c0c1-0bab-4e20-85fd-33b280036f30

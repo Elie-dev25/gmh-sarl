@@ -208,24 +208,15 @@ vendor/bin/phpunit
 - ✅ Deployment guide included
 - ⚠️ Next: Enable HTTPS/SSL (Week 2) for 9/10 score
 
-## 📧 Contact
-
-**GENERAL MARKET & HEALTHCARE ENTERPRISE SARL**
-- 📍 15 BP 168 Abidjan, Côte d'Ivoire
-- 📞 +225 07 06 84 10 82
-- ✉️ info@gmh-sarl.com
 
 ---
 
-## 👨‍💻 Auteur
+## 👤 Auteur
 
-**Elie NJINE TIENCHEU**
+**Elie NJINE TIENCHEU**  
+Software Engineer
 
-- 📞 +237 656 440 786
-- ✉️ contact@elie-njine.online
-- 💼 [LinkedIn](https://linkedin.com/in/elie-njine-736b04274)
-- 🌐 [Portfolio](https://www.elie-njine.online)
-
-## 📄 Licence
-
-© 2024 GENERAL MARKET & HEALTHCARE ENTERPRISE SARL. Tous droits réservés.
+[![GitHub](https://img.shields.io/badge/GitHub-Elie--dev25-181717?style=flat&logo=github)](https://github.com/Elie-dev25)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Elie%20NJINE-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/elie-njine-736b04274)
+[![Portfolio](https://img.shields.io/badge/Portfolio-elie--njine.online-FF5733?style=flat&logo=google-chrome)](https://elie-njine.online)
+[![Email](https://img.shields.io/badge/Email-contact@elie--njine.online-D14836?style=flat&logo=gmail)](mailto:contact@elie-njine.online)
